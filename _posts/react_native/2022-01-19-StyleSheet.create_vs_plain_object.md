@@ -3,7 +3,7 @@ title: StyleSheet.create vs Plain Object
 author:
   name: 박 찬영
   link: https://github.com/univdev
-date: 2022-01-18 15:46:00 +0900
+date: 2022-01-19 15:46:00 +0900
 categories: [React Native]
 tags: [React Native, Performance]
 ---
