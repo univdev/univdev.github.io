@@ -3,6 +3,7 @@ title: StyleSheet.create vs Plain Object
 author:
   name: 박 찬영
   link: https://github.com/univdev
+date: 2022-01-18 15:46:00 +0900
 categories: [React Native]
 tags: [React Native, Performance]
 ---
@@ -37,9 +38,9 @@ const Styles = {
 사실이 아닙니다. 애초에 ```Vanila Javascript```는 유효성 검사를 할 수 있는 기능이 없습니다.  
 물론 런타임 때는 유효성 검사를 하지만 모두가 알다시피 두 방식으로 제작 된 스타일시트는 컴포넌트에 정상적으로 할당이 되며 동작마저 동일하게 이루어집니다.
 # 그럼 왜 만든거지?
-이 섹션은 [성능 향상](#성능-향상의-이점이-있다)오해와 뿌리가 같습니다.  
+이 섹션은 [성능 향상](#성능-향상의-이점이-있다) 오해와 뿌리가 같습니다.  
 React Native팀은 ```StyleSheet```를 별도로 만들고 성능 향상을 위해 개발을 시도한 적이 있습니다.  
-실제로 **React Native**라이브러리의 **StyleSheet** 코드의 [주석][주석]을 보면 성능과 관련한 섹션이 있는데, 매번 스타일 객체를 새로 만드는 대신 Style 요소에 고유의 ID를 생성하고 중복 사용 시 탐색 시간을 줄이려고 시도한 흔적이 보입니다만, *(아직 구현되지 않음)*이라는 코멘트가 붙여져 있는 것을 볼 수 있습니다.  
+실제로 **React Native**라이브러리의 **StyleSheet** 코드의 [주석][주석]을 보면 성능과 관련한 섹션이 있는데, 매번 스타일 객체를 새로 만드는 대신 Style 요소에 고유의 ID를 생성하고 중복 사용 시 기존에 생성했던 ID를 이용하여 퍼포먼스 향상을 시도한 흔적이 보입니다만, *(아직 구현되지 않음)*이라는 코멘트가 붙여져 있는 것을 볼 수 있습니다.  
 그러므로 성능면에서 더 나은 경험을 주려는 시도는 했으나 아직 차이를 보일만한 개발이 이루어지지는 않았다고 볼 수 있습니다.
 # 참조
 [[Stackoverflow] React Native - What is the benefit of using StyleSheet vs a plain object][참조]
