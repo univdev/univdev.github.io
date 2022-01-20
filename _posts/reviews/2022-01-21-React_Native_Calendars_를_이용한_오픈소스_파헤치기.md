@@ -1,5 +1,5 @@
 ---
-title: React Native Calendars를 통해 오픈소스를 파헤쳐보자
+title: "React Native Calendars를 통해 오픈소스를 파헤쳐보자"
 author:
   name: 박 찬영
   link: https://github.com/univdev
