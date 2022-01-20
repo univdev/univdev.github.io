@@ -3,8 +3,8 @@ title: "React Native Calendars를 통해 오픈소스를 파헤쳐보자"
 author:
   name: 박 찬영
   link: https://github.com/univdev
-date: 2022-01-21 00:11:00 +0900
-categories: [Reviews]
+date: 2022-01-21 24:11:00 +0900
+categories: [Review]
 tags: [React Native, Review, Open Source]
 ---
 # 기존에 사용하던 오픈소스
