@@ -35,7 +35,7 @@ tags: [React Native, Review, Open Source]
 ```tsx
 <Calendar
   markingType={'period'}
-  markedDates={{
+  markedDates={% raw %}{{
     '2012-05-15': {marked: true, dotColor: '#50cebb'},
     '2012-05-16': {marked: true, dotColor: '#50cebb'},
     '2012-05-21': {startingDay: true, color: '#50cebb', textColor: 'white'},
@@ -43,7 +43,7 @@ tags: [React Native, Review, Open Source]
     '2012-05-23': {color: '#70d7c7', textColor: 'white', marked: true, dotColor: 'white'},
     '2012-05-24': {color: '#70d7c7', textColor: 'white'},
     '2012-05-25': {endingDay: true, color: '#50cebb', textColor: 'white'}
-  }}
+  }}{% endraw %}
 />
 ```
 ```markedDates``` Property에 ```YYYY-MM-DD``` 포맷의 key들로 이루어진 Object를 넣고, 범위로 표시하고 싶은 날짜의 시작일에는 ```startingDay``` Propery를, 종료일에는 ```endingDay```를 삽입하는 방식으로 해결할 수 있다고 적혀있습니다.
