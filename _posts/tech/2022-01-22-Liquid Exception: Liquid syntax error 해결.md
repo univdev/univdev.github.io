@@ -24,9 +24,6 @@ Jekyll은 Liquid Template Language를 이용하여 문서를 읽어냅니다.
 ![원인][원인]  
 이 부분에서 {% raw %}```{{```를 사용한 것이 원인이 되었기에 **"Liquid 문법을 쓰려고 한게 아니예요"**라고 Liquid에게 말해줘야 합니다.{% endraw %}  
 원인의 시작 부분에 ```{% raw %}{%{% endraw %} raw %}```를 적고, 종료되는 지점에 ```{% raw %}{%{% endraw %} endraw %}```를 적으면 해결할 수 있습니다.  
-```markdown
-다행히도 해당 부분은 공식 API에서 지원을 하는 기능으로 보이기에 가능하다고 판단했습니다.  
-![달력 범위 선택][Calendar Range]
 ```tsx
 <Calendar
   markingType={'period'}
@@ -41,8 +38,6 @@ Jekyll은 Liquid Template Language를 이용하여 문서를 읽어냅니다.
   }}{% endraw %}
 />
 ```
-```
-
 
 [오픈소스를 파헤쳐보자]: https://univdev.github.io/posts/React_Native_Calendars/
 [Liquid Syntax Error]: /assets/posts/liquid_syntax_error.png
