@@ -31,3 +31,8 @@ export ANDROID_SDK=/Users/<your_computer_name>/Library/Android/sdk
 export PATH=/Users/<your_computer_name>/Library/Android/sdk/platform-tools:$PATH
 ```
 6. ```source ~/.zshrc```를 실행하여 환경 변수를 적용합니다.
+
+# 참고
+[M1 React Native Android Studio 시뮬레이터 이슈][참고]
+
+[참고]: https://velog.io/@seri_ous/M1-React-Native-Android-Studio-%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%ED%84%B0
