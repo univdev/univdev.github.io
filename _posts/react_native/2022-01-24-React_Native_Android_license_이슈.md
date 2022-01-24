@@ -3,6 +3,7 @@ title: "[React Native] Please accept all necessary Android SDK licenses using An
 author:
   name: 박 찬영
   link: https://github.com/univdev
+date: 2022-01-24 15:32:00 +0900
 categories: [React Native]
 tags: [React Native, Android, M1]
 ---
