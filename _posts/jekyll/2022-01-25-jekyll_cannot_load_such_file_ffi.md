@@ -23,10 +23,10 @@ tags: [Blog, Jekyll]
         from /Library/Ruby/Gems/2.6.0/gems/jekyll-sass-converter-2.1.0/lib/jekyll-sass-converter.rb:4:in `<top (required)>'
 ```
 ```bundle exec jekyll serve```를 입력해도 이런 에러만 나오고 있는 상황이라 로컬에서 글을 확인하고 올릴 수가 없는 상황에 빠졌습니다.  
-## 시도 방안 1
+## 첫 번째 시도
 위 에러문에서 유독 눈에 띄는 부분이 있는데, ```cannot load such file -- 2.6/ffi_c``` 라고 적힌 부분입니다.  
 의존성 패키지 중 ```ffi```가 삭제라도 됐나 싶어서 ```gem install ffi```를 입력해서 설치를 하고 실행해봐도 결과는 매한가지였습니다.
-## 시도 방안 2
+## 두 번째 시도
 ```rm -rf``` 명령어로 프로젝트 폴더를 전부 지우고 Github에서 다시 Clone을 떠오는 방법을 사용해봤습니다.  
 Github의 Workflow는 정상 동작을 하길래 이렇게 하면 되지 않을까 싶어 시도해 본 결과 같은 에러를 표시했습니다.
 # 해결 방법
