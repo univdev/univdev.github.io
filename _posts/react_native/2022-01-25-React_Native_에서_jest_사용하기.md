@@ -41,7 +41,7 @@ tags: [React Native, Jest, Unittest]
 ## 장점
 테스트가 조밀하게 작성 된 소프트웨어는 컴포넌트와 페이지의 갯수만큼의 QA 직원을 데리고 있는 것과 마찬가지입니다. *(그것도 매우 성실한)*  
 1. QA 직원 한명은 컴포넌트 하나만을 들여다보기 때문에 절대 실수하는 법이 없습니다.
-2. 더 이상 쪼개질 수 없을 정도로 디테일하게 작성 된 테스트코드는 추후 기능 추가 및 변경에 의한 대응도 간편합니다.
+2. 더 이상 쪼개질 수 없을 정도로 디테일하게 작성 된 테스트 코드는 추후 기능 추가 및 변경에 의한 대응도 간편합니다.
 3. 사람이 진행하는 테스트가 아니기에 인적 실수가 적용되지 않습니다.
 4. 진행해야 할 테스트를 덜 알려주게 되면 Coverage를 차감하는 방식으로 알려주기 때문에 기획 사항이 누락 될 위험이 없습니다.
 5. 테스트를 진행하면서 실제로 소프트웨어를 돌려보기 때문에 어떤 과정에서 퍼포먼스가 안좋은지를 바로 알 수 있습니다.
@@ -229,7 +229,7 @@ yarn add --dev @types/jest @testing-library/jest-native @testing-library/react-n
     });
     ```
 14. 위 테스트 코드를 기반으로 ```Home```을 구현해보면 실제 ```Home```의 코드는 아래와 같이 될 것입니다.
-    ```javascript
+    ```jsx
     import produce from 'immer';
     import React, { useReducer } from 'react';
     import { Text, View, TextInput, Button, Alert, SafeAreaView, } from 'react-native';
@@ -317,13 +317,13 @@ yarn test
 ```
 ### 특정 파일만 테스트 해보기
 만약 특정 테스트 파일만 읽고 싶다면 아래 명령어를 입력합니다.
-```
+```shell
 yarn test home
 // home은 파일의 이름이다. Home-test.js일 경우, 앞의 Home만 따서 쓰는 형태이다.
 ```
 ### 스냅샷 갱신
 만약 스냅샷을 재촬영하고 싶다면 아래 명령어를 입력합니다.
-```
+```shell
 yarn test --u
 ```
 ## Awesome!
