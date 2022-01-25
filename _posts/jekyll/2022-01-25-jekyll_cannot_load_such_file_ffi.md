@@ -4,8 +4,8 @@ author:
     name: 박 찬영
     author: https://github.com/univdev
 date: 2022-01-25 10:39:00 +0900
-categories: [Jekyll]
-tags: [Jekyll, Blog]
+categories: [Blog]
+tags: [Blog, Jekyll]
 ---
 # 사건
 제 맥북이 어느 순간부터 Jekyll 기반 블로그들을 로컬에서 실행할 수가 없게 되었습니다.  
