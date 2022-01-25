@@ -4,7 +4,7 @@ author:
   name: 박 찬영
   link: https://github.com/univdev
 date: 2022-01-21 23:11:00 +0900
-categories: [Review]
+categories: [Tech]
 tags: [React Native, Review, Open Source]
 ---
 # 기존에 사용하던 오픈소스
