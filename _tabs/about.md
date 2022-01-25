@@ -1,8 +1,107 @@
 ---
-title: About
+title: Chanyoung Park
 icon: fas fa-info-circle
 order: 4
 ---
+<style>
+    .social {
+        color: inherit;
+        text-decoration: none;
+    }
+</style>
+> 웹 프론트엔드 기술 리더십을 갖추고 엔지니어링팀을 이끌 줄 아는 젊은 리더
 
+# 🛠 Skills
+## 💻 Web
+- Vuejs, Nuxtjs, Vuex
+- Reactjs, Redux, Redux Thunk
+- Javascript, jQuery
+- axios
+- HTML, PUG, CSS3, LESS
+- Semantic Web, SEO
 
-> **Note**: Add Markdown syntax content to file `_tabs/about.md` and it will show up on this page.
+## 📱 Mobile
+- React Native, React Hooks, React Native AsyncStorage
+
+# 🗞 Pages
+## <i class="fab fa-github"></i>&nbsp;&nbsp;Github
+- 토이 프로젝트
+- TIL (Today I Learned)
+- Github pages 기술 블로그
+
+## <i class="fas fa-award"></i>&nbsp;&nbsp;박찬영을 추천합니다
+- 인연이 닿았던 모든 분들로부터 추천사를 받고 있습니다!
+- 저와 함께한 시간이 좋은 경험이 되었다면 누구든지 작성이 가능합니다!
+
+# 📖 Histories
+## Frontend Engineering Manager, 주식회사 스타셸
+*18.09.15 - 21.07.16 (약 2년 10개월)*
+
+- 완전원격근무 체제 하에서 **백엔드 개발자와 프론트엔드 개발자, 디자이너가 함께 있는 6인 교차기능팀 운영** **및 관리**
+- 스타셸 스튜디오 **개발자 멘토링 및 세미나 진행**
+- 국민은행 순회점검 시스템 개발
+- 현대이노션 눈금 백오피스 개발
+- LG상사 그린긱 서비스 총괄
+- GS편의점 노무 관리 시스템 총괄
+- 브레이브엔터테인먼트 뮤직브로 웹 앱 총괄
+- 노무법인 세울 회사 소개 웹사이트 총괄
+- 위 프로젝트 외 30여개 프로젝트에 대한 개발 및 관리 진행
+
+## Frontend Engineer, 단감소프트
+*2021.08.09 ~ 현재*
+
+- 반려 동식물 애호가를 위한 커뮤니티 '구르미와 반모' CMS 개발
+- '구르미와 반모' 브랜드 페이지 개발
+- ‘구르미와 반모’ 앱 UI 개편
+
+# 🎓 Education
+## 인하공업전문대학 재학 중
+- 2018 ~ 현재
+- 컴퓨터시스템 전공
+- **인천광역시 소속 대표** 기능경기대회 출전 선수
+- 고등학교 프로그래밍 강사
+
+## 안산공업고등학교 졸업
+- 2014 ~ 2017
+- **경기도 소속 대표** 지방 / 전국 기능경기대회 [출전 및 수상][수상]
+- 기능반 소속
+
+# ✏️ Experiences
+## 한국산업인력공단 글로벌숙련기술진흥원 웹 개발 교육 이수 *(14년 05월)*
+### 이수 내용
+- Javascript 라이브러리인 jQuery의 심화 과정 및 현업 응용
+- jQuery의 파생 라이브러리인 jQuery UI의 다양한 컴포넌트 활용 방법
+    - Datepicker, Draggable and Droppable 등
+
+## 전국기능경기대회 유공자 일본 해외연수 *(17년 01월)*
+### 개요
+경기도 소속 출전 선수 신분으로 **웹디자인 및 개발 부문, 3위 동메달**의 쾌거를 이룩하여 경기도 교육청 주관으로 진행하는 일본 연수 프로그램에 참여 함.  
+### 이수 내용
+- 일본의 특성화 고등학교를 방문하여 일본의 특성화 교육 방침에 대한 강의를 이수함.
+- 옆나라 일본의 이문화를 이해하는 시간을 담당 가이드 분과 함께 가짐
+
+## 안산공업고 기능경기대회 준비반 프로그래밍 강사 *(17년 03월 ~ 17년 04월)*
+### 개요
+졸업했던 모교에서 기능경기 대회를 준비하는 후배들에게 중급 수준의 프로그래밍 방식과 사용자 친화적인 UI를 그리는 방법에 대해 교육 함.  
+### 교육 내용
+- jQuery와 jQuery UI를 활용한 영화관 좌석 예매 UI를 그리는 방법
+    - [Selectable](https://jqueryui.com/selectable/)을 이용한 Drag 방식의 예약 UI
+- PHP 및 Mysql을 이용한 회원 데이터 저장 및 좌석 데이터와 예약 데이터의 연동 방법
+- MVC 패턴의 이론
+- MVC 패턴을 활용한 프레임워크 Laravel의 사용법
+
+## 세명컴퓨터고등학교 기능경기대회 준비반 프로그래밍 강사 *(17년 05월 ~ 17년 12월)*
+### 개요
+동아리 선배들과의 연락이 끊겨서 제대로 된 기술 인계가 되지 않은 학생들에게 어렵지 않은 수준의 프로그래밍 기초를 교육 함.
+### 교육 내용
+- 프로그래밍을 처음 시작하는 학생들의 눈높이에 맞는 HTML과 Javascript 기초 교육
+- object 자료형과 array 자료형의 차이 점
+- PHP를 이용한 Mysql 회원 가입 및 게시물 **CRUD**
+
+### 안산공업고 기능경기대회 **준비반 프로그래밍 강사 2차 *(18년 04월 ~ 18년 08월)*
+### 개요
+졸업했던 모교에서 기능경기 대회를 준비하는 후배들과 함께 과거 **국제기능경기대회 출제 문제**를 해결해보고 코드를 해석해보는 방식의 교육을 진행 함.
+
+### 인평자동차고 기능경기대회 **준비반 프로그래밍 강사 *(20년 05월 - 20년 09월)*
+
+[수상]: http://m.ansansm.co.kr/news/articleView.html?idxno=31675
