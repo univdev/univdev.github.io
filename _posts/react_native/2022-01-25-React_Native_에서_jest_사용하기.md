@@ -101,9 +101,9 @@ yarn add --dev @types/jest @testing-library/jest-native @testing-library/react-n
 6. **스냅샷 촬영 및 컴포넌트 렌더링이 제대로 되었는지에 대한** 테스트 로직을 작성합니다. (위에서 생성한 ```describe```의 ```callback``` 내부에 작성해야 한다.)
     ```javascript
     it('Home 화면이 정상적으로 렌더링 되는가?', () => { // 현재 테스트 하고자 하는 목적을 적고, 두번째 매개변수로 callback을 전달한다. 실제 테스트는 callback 내부에서 진행한다.
-    const screen = render(<Home />); // react-native 컴포넌트를 @testing-library/react-native 패키지의 render 함수를 통해 렌더링한다.
-    const json = screen.toJSON(); // 렌더링 된 컴포넌트를 json 구조로 변환한다.
-    expect(json).toMatchSnapshot(); // 만들어진 json으로 스냅샷을 촬영한다.
+        const screen = render(<Home />); // react-native 컴포넌트를 @testing-library/react-native 패키지의 render 함수를 통해 렌더링한다.
+        const json = screen.toJSON(); // 렌더링 된 컴포넌트를 json 구조로 변환한다.
+        expect(json).toMatchSnapshot(); // 만들어진 json으로 스냅샷을 촬영한다.
     });
     ```
     > 스냅샷을 촬영하는 이유는, 추후 컴포넌트가 무언가에 의해 변경됨을 감지하기 위해서 앱 실행 당시 초기의 모습을 기억해두기 위해서입니다.
@@ -112,16 +112,16 @@ yarn add --dev @types/jest @testing-library/jest-native @testing-library/react-n
 7. **제대로 타이틀이 보여지는지**에 관한 테스트를 작성합니다.
     ```javascript
     it('타이틀이 정상적으로 보여지는가?', () => { // 마찬가지로 현재 테스트하고자 하는 목적을 적는다.
-    const screen = render(<Home />); // Home 컴포넌트를 렌더링한다.
-    const title = screen.getByText('Your Favorite Restaurants!'); // 해당 screen에서 'Your Favorite Restaurants!' 라는 내용을 갖는 노드를 찾는다.
-    expect(title).toBeDefined(); // 만약 노드가 있다면 toBeDefined()로 해당 객체가 정의 되었는지 테스트한다. (toBeDefined는 undefined가 넘어가면 실패를 반환하는 메소드이다.)
+        const screen = render(<Home />); // Home 컴포넌트를 렌더링한다.
+        const title = screen.getByText('Your Favorite Restaurants!'); // 해당 screen에서 'Your Favorite Restaurants!' 라는 내용을 갖는 노드를 찾는다.
+        expect(title).toBeDefined(); // 만약 노드가 있다면 toBeDefined()로 해당 객체가 정의 되었는지 테스트한다. (toBeDefined는 undefined가 넘어가면 실패를 반환하는 메소드이다.)
     });
     ```
 8. **내가 가장 좋아하는 레스토랑의 이름을 입력할 수 있는 입력 필드가 노출** 되었는지에 관한 테스트를 작성합니다.
     ```javascript
     it('레스토랑 이름을 입력할 수 있는 텍스트 필드가 존재하는가?', () => {
-    const screen = render(<Home />);
-    expect(screen.getByTestId('restaurantNameField')).toBeDefined(); // testID 속성에 'restaurantNameField'가 들어가있는 요소가 있는지 찾고, 정의 되었는지를 식별한다.
+        const screen = render(<Home />);
+        expect(screen.getByTestId('restaurantNameField')).toBeDefined(); // testID 속성에 'restaurantNameField'가 들어가있는 요소가 있는지 찾고, 정의 되었는지를 식별한다.
     });
     ```
     > ```testID```란, ```React Native```에서 순전히 테스트를 위해 존재하는 ```Attribute```입니다.
@@ -132,8 +132,8 @@ yarn add --dev @types/jest @testing-library/jest-native @testing-library/react-n
     ```javascript
     // 레스토랑 이름 입력 필드 검사 로직과 testId만 다르기 때문에 설명은 생략한다.
     it('레스토랑을 추가할 수 있는 추가 버튼이 존재하는가?', () => {
-    const screen = render(<Home />);
-    expect(screen.getByTestId('restaurantAddButton')).toBeDefined();
+        const screen = render(<Home />);
+        expect(screen.getByTestId('restaurantAddButton')).toBeDefined();
     });
     ```
 10. **레스토랑 이름을 입력하지 않고 추가 버튼을 누를 경우**에 대한 테스트를 작성하기 전에, 패키지 ```import```라인에 해당 코드를 추가합니다.
