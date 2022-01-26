@@ -28,12 +28,11 @@ cd ios
 pod install
 ```
 ## 애니메이션 애셋 다운로드
-코드를 작성하기 전에, 마음에 드는 애니메이션 파일을 하나 갖고옵니다.  
-직접 [Adobe의 After Effect][After Effect]를 이용하여 만들수도 있습니다.  
-하지만 이 문서에서는 다른 누군가가 만들어 놓은 에셋을 다운받아 사용할 예정입니다.
+코드를 작성하기 전에, 마음에 드는 애니메이션 파일을 구해야 합니다. *(직접 [Adobe의 After Effect][After Effect]를 이용하여 만들수도 있습니다.)*  
+이 문서에서는 다른 누군가가 만들어 둔 애셋을 다운받아 진행할 예정입니다.  
+다른 사람이 만들어놓은 예쁜 애셋들은 [Lottie 공식 홈페이지][공홈]에서 받으실 수 있습니다!
 
-저는 스플래시 스크린을 만들고 싶군요.  
-여기 마침 [적절한 스플래시 애니메이션][예제 파일]이 있으니 얘를 사용해봅시다.  
+여기 마침 [적절한 스플래시 애니메이션][예제 파일]이 있으니 얘를 사용해서 역동적인 애니메이션을 보여주는 스플래시 스크린을 만들어봅시다.  
 페이지에 방문하면 우측 상단에 있는 [Download] 버튼을 눌러 [Lottie JSON] 타입으로 다운로드 받아봅시다.  
 다운로드 받은 Lottie JSON 파일을 ```[RN Project Name]/assets/lottie``` 경로에 집어넣고 파일의 이름을 ```splash.json```이라고 명명합니다.
 ## 실제 코드 작성하기
@@ -41,7 +40,7 @@ pod install
 도입부에는 사용할 패키지를 ```import```하는 작업이 필요하겠죠?
 ```jsx
 import React from 'react';
-import { SafeAreaView, View } from 'react-native';
+import { View } from 'react-native';
 import LottieView from 'lottie-react-native';
 ```
 ```import``` 코드 아래쪽에 실제 페이지에 반영 될 컴포넌트를 정의하고 해당 컴포넌트를 ```export```합니다.  
@@ -74,10 +73,11 @@ export default App;
 ```
 ## 결과물
 ![결과물][결과]  
-아주 예쁘게 스플래시 스크린을 만들 수 있습니다!
+아주 예쁜 스플래시 스크린이 만들어졌네요!
 
 [로고]: https://i.pinimg.com/originals/37/7d/e4/377de42aabf87d7f489773b512a220dd.gif
 [로티]: https://lottiefiles.com
 [After Effect]: https://lottiefiles.com/plugins/after-effects
+[공홈]: https://lottiefiles.com/
 [예제 파일]: https://lottiefiles.com/12100-splash-app-rtour24
 [결과]: /assets/posts/lottie_result.gif
