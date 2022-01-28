@@ -1,8 +1,8 @@
 ---
 title: "Lottie와 React Native를 이용한 역동적인 앱 만들기"
 author:
-    name: 박 찬영
-    link: https://github.com/univdev
+  name: 박 찬영
+  link: https://github.com/univdev
 date: 2022-01-26 10:14:00 +0900
 categories: [React Native]
 tags: [React Native, Lottie]
@@ -46,6 +46,7 @@ import LottieView from 'lottie-react-native';
 ```import``` 코드 아래쪽에 실제 페이지에 반영 될 컴포넌트를 정의하고 해당 컴포넌트를 ```export```합니다.  
 ```LottieView``` 컴포넌트를 이용하여 ```required```한 애니메이션 JSON을 실제로 보여줄 수 있습니다.
 ```jsx
+{% raw %}
 const App = () => {
   return (
     <View
@@ -70,6 +71,7 @@ const App = () => {
 };
 
 export default App;
+{% endraw %}
 ```
 ## 결과물
 ![결과물][결과]  

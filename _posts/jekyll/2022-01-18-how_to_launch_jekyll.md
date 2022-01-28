@@ -1,5 +1,5 @@
 ---
-title: "jekyll 프로젝트 구동하는법"
+title: jekyll 프로젝트 구동하는법
 author:
   name: 박 찬영
   link: https://github.com/univdev
