@@ -54,7 +54,7 @@ export default () => {
 }
 ```
 마지막으로, 권한을 부여받을 상황에 맞는 페이지에 해당 코드를 추가합니다. 보통은 앱에 접속하자마자 권한을 받으므로, ```App.jsx``` 파일에 적용합니다.
-# 사용자의 유저를 한 번 얻기
+# 사용자의 위치를 한 번만 얻기
 ```javascript
 Geolocation.getCurrentPosition(
   (position) => {
@@ -68,7 +68,7 @@ Geolocation.getCurrentPosition(
 );
 ```
 ```Geolocation``` 패키지의 ```getCurrentPosition``` 메소드를 사용하면 사용자의 디바이스가 있는 위치를 받아올 수 있습니다.
-# 사용자의 유저를 계속 추적하기
+# 사용자의 위치를 계속 추적하기
 ```javascript
 Geolocation.watchPosition((position) => {
   const { latitude, longitude } = position.coords;
