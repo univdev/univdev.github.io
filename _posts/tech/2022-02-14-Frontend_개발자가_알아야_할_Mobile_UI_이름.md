@@ -7,6 +7,7 @@ date: 2022-02-14 13:58:00 +0900
 categories: [Tech]
 tags: [Frontend, Mobile, UI]
 ---
+# 원문
 [Nomenclature of mobile app visual elements — Android vs iOS][원문]
 
 > 해당 문서에 나오는 용어 이름과 사진을 참고하여 제 방식대로 간단하게 설명하였습니다.
