@@ -54,7 +54,31 @@ export default () => {
 }
 ```
 마지막으로, 권한을 부여받을 상황에 맞는 페이지에 해당 코드를 추가합니다. 보통은 앱에 접속하자마자 권한을 받으므로, ```App.jsx``` 파일에 적용합니다.
+# 사용자의 유저를 한 번 얻기
+```javascript
+Geolocation.getCurrentPosition(
+  (position) => {
+    console.log(position);
+  },
+  (error) => {
+    // See error code charts below.
+    console.log(error.code, error.message);
+  },
+  { enableHighAccuracy: true, timeout: 15000, maximumAge: 10000 }
+);
+```
+```Geolocation``` 패키지의 ```getCurrentPosition``` 메소드를 사용하면 사용자의 디바이스가 있는 위치를 받아올 수 있습니다.
+# 사용자의 유저를 계속 추적하기
+```javascript
+Geolocation.watchPosition((position) => {
+  const { latitude, longitude } = position.coords;
+  console.log(latitude, longitude);
+});
+```
+```Geolocation``` 패키지의 ```watchPosition``` 메소드를 사용하면 사용자의 디바이스의 위치가 변경 될 때마다 ```callback```이 실행되어 사용자의 위치를 갱신할 수 있습니다.
 # 같이 보면 좋을 문서
+[react-native-geolocation-service API 문서][API 문서]  
 [[React Native] 네이버 지도 연동][네이버 지도 연동]
 
+[API 문서]: https://www.npmjs.com/package/react-native-geolocation-service#API
 [네이버 지도 연동]: https://univdev.github.io/posts/React_Native_%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%A7%80%EB%8F%84_%EC%97%B0%EB%8F%99/
