@@ -1,5 +1,5 @@
 ---
-title: "Lottie와 React Native를 이용한 역동적인 앱 만들기"
+title: "[React Native] Lottie와 React Native를 이용한 역동적인 앱 만들기"
 author:
   name: 박 찬영
   link: https://github.com/univdev

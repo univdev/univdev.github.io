@@ -4,7 +4,7 @@ author:
     name: 박 찬영
     author: https://github.com/univdev
 date: 2022-01-25 10:39:00 +0900
-categories: [Jekyll]
+categories: [Tech, Jekyll]
 tags: [Jekyll, Blog]
 ---
 # 사건

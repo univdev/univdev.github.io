@@ -1,5 +1,5 @@
 ---
-title: StyleSheet.create vs Plain Object
+title: "[React Native] StyleSheet.create vs Plain Object"
 author:
   name: 박 찬영
   link: https://github.com/univdev

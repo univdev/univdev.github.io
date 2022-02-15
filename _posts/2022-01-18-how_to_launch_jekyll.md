@@ -4,7 +4,7 @@ author:
   name: 박 찬영
   link: https://github.com/univdev
 date: 2022-01-18 14:07:00 +0900
-categories: [Jekyll]
+categories: [Tech, Jekyll]
 tags: [Jekyll, Markdown, Notice]
 ---
 # 개요
