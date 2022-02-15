@@ -4,7 +4,7 @@ author:
   name: 박 찬영
   link: https://github.com/univdev
 date: 2022-02-15 14:13:00 +0900
-categories: [Tech, Talk]
+categories: [Tech, NodeJS]
 tags: [Tech, Crawler, Puppeteer, Chromium]
 ---
 # 웹 크롤러
