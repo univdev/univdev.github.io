@@ -64,6 +64,12 @@ yesterday: 2022-02-14
 ```
 {: file="결과" }
 원래라면 날짜를 계산하고 포맷팅을 하기까지 상당량의 코드가 들어갔겠지만 이를 ```npm``` 생태계의 라이브러리를 이용한다면 매우 쉽게 구현할 수 있습니다.
+# npm보다는 yarn
+저는 패키지 매니저로 npm보다는 yarn을 주로 사용하기 때문에 yarn으로 설명 된 문서가 많습니다.  
+문서의 흐름을 매끄럽게 따라가고 싶으시다면 아래 명령어를 입력하여 yarn을 설치해주세요!
+```shell
+npm i -g yarn
+```
 
 [NPM]: https://www.npmjs.com/
 [Momentjs]: https://www.npmjs.com/package/moment
