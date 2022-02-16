@@ -102,7 +102,7 @@ const Styles = {
 아니 도대체 이게 무슨 원리로 되는건지 직접 사용하고도 어이가 없어서 구글링을 잔뜩 해봐도 원리를 말하는 사람이 단 한명도 없어서 원리도 모르고 사용하는 코드 중 하나가 되었습니다.  
 그래서 원래는 이 글도 작성을 하지 않으려고 했다가, 추후에 같은 상황을 마주했을 때 쉽게 수정하기 위해서 혹은 같은 문제를 앓고 있는 다른 개발자 분들을 위해서라도 문서화 결정을 내렸습니다.
 
-[웹뷰]: /assets/posts/webview.png
+[웹뷰]: https://firebasestorage.googleapis.com/v0/b/univdev-github-io.appspot.com/o/webview.png?alt=media&token=d5e67a8b-eafb-42c4-ae9d-21ef57fb01ca
 [Freedcamp]: https://freedcamp.com
 [API 문서]: https://github.com/react-native-webview/react-native-webview/blob/master/docs/Reference.md#androidHardwareAccelerationDisabled
 [토론]: https://github.com/react-native-webview/react-native-webview/issues/811

@@ -308,12 +308,12 @@ export function extractComponentProps(component: any, props: any, ignoreProps?: 
 아직 커미터의 리뷰가 도착하지 않았기 때문에 병합 대기 상태입니다만, 유익한 리뷰가 달린다면 참 좋을 것 같습니다!  
 감사합니다!
 
-[앱 캘린더]: /assets/posts/before_calendar.gif
+[앱 캘린더]: https://firebasestorage.googleapis.com/v0/b/univdev-github-io.appspot.com/o/before_calendar.gif?alt=media&token=4afea477-c4a1-40b8-843d-2f3cdccabc11
 [React Native Calendars]: https://github.com/wix/react-native-calendars
 [React Native Calendar Libraries]: https://openbase.com/categories/js/best-react-native-calendar-libraries
 [Calendar Range]: https://github.com/wix-private/wix-react-native-calendar/raw/master/demo/assets/multi-marking.png?raw=true
-[컴포넌트를 추가해야 하는 부분]: /assets/posts/month_calendar.jpeg
+[컴포넌트를 추가해야 하는 부분]: https://firebasestorage.googleapis.com/v0/b/univdev-github-io.appspot.com/o/month_calendar.jpeg?alt=media&token=9ed9c1a7-e5fd-4d68-ab5f-da1de1d52ac5
 [renderHeader 메소드]: #renderHeader-구조
-[캘린더 원형]: /assets/posts/normal_calendar.gif
-[스크롤 캘린더]: /assets/posts/scroll_calendar.gif
-[가로 스크롤 캘린더]: /assets/posts/horizontal_calendar.gif
+[캘린더 원형]: https://firebasestorage.googleapis.com/v0/b/univdev-github-io.appspot.com/o/normal_calendar.gif?alt=media&token=a3478a0a-8bfe-4959-8e72-d0969548d86f
+[스크롤 캘린더]: https://firebasestorage.googleapis.com/v0/b/univdev-github-io.appspot.com/o/scroll_calendar.gif?alt=media&token=534e0295-124a-4791-90f1-e424d783071c
+[가로 스크롤 캘린더]: https://firebasestorage.googleapis.com/v0/b/univdev-github-io.appspot.com/o/horizontal_calendar.gif?alt=media&token=bf7d98c0-e00c-4c45-9fa7-3782e6ed5060

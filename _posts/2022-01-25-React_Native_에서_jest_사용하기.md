@@ -329,5 +329,5 @@ yarn test --u
 ## Awesome!
 ![Result][결과]
 
-[스크린샷]: /assets/posts/jest_screen.gif
-[결과]: /assets/posts/jest_result.gif
+[스크린샷]: https://firebasestorage.googleapis.com/v0/b/univdev-github-io.appspot.com/o/jest_screen.gif?alt=media&token=38da110e-7bc3-4c13-b15c-e7a76533f803
+[결과]: https://firebasestorage.googleapis.com/v0/b/univdev-github-io.appspot.com/o/jest_result.gif?alt=media&token=2a9717ac-356f-4971-a3ba-d0c7aebbb9f3

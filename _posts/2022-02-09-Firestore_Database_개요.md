@@ -26,5 +26,5 @@ Firebase Project를 개설하고나면 이렇게 모든 컬렉션이 비어있�
 필드란 관계형 데이터베이스의 Attribute와 같다고 볼 수 있습니다.  
 문서 내부에 있는 수많은 데이터 유형 중 하나를 의미합니다.
 
-[Database]: /assets/posts/firestore/database.png
-[Example]: /assets/posts/firestore/example.png
+[Database]: https://firebasestorage.googleapis.com/v0/b/univdev-github-io.appspot.com/o/firestore_database.png?alt=media&token=f7a2e7d1-8f87-4bc5-a6b2-d58b1151481b
+[Example]: https://firebasestorage.googleapis.com/v0/b/univdev-github-io.appspot.com/o/firestore_example.png?alt=media&token=bc8536bd-7052-4e98-b02a-d80e472f8e39

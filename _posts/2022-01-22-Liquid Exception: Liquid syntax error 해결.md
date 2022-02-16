@@ -40,6 +40,6 @@ Jekyll은 Liquid Template Language를 이용하여 문서를 읽어냅니다.
 ```
 
 [오픈소스를 파헤쳐보자]: https://univdev.github.io/posts/React_Native_Calendars/
-[Liquid Syntax Error]: /assets/posts/liquid_syntax_error.png
+[Liquid Syntax Error]: https://firebasestorage.googleapis.com/v0/b/univdev-github-io.appspot.com/o/liquid_syntax_error.png?alt=media&token=0b3b4342-53f9-4523-b598-deace50a0026
 [해결]: https://iamheesoo.github.io/blog/gitblog-sol-jekyll02
-[원인]: /assets/posts/liquid_error_원인.png
+[원인]: https://firebasestorage.googleapis.com/v0/b/univdev-github-io.appspot.com/o/liquid_error_%E1%84%8B%E1%85%AF%E1%86%AB%E1%84%8B%E1%85%B5%E1%86%AB.png?alt=media&token=169711c2-c4ca-40e3-955b-8e9fe7113662

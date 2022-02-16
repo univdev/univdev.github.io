@@ -82,4 +82,4 @@ export default App;
 [After Effect]: https://lottiefiles.com/plugins/after-effects
 [공홈]: https://lottiefiles.com/
 [예제 파일]: https://lottiefiles.com/12100-splash-app-rtour24
-[결과]: /assets/posts/lottie_result.gif
+[결과]: https://firebasestorage.googleapis.com/v0/b/univdev-github-io.appspot.com/o/lottie_result.gif?alt=media&token=7c133e4d-e6fd-428f-92a8-864521b0d726
