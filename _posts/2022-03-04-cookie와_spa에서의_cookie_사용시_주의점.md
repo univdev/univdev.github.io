@@ -22,8 +22,8 @@ Cookie는 텍스트 형태의 파일이라고 위에서 언급했습니다.
 기본형의 경우에 문자열로 변환하는 것은 그리 어렵지 않으나, 객체같은 경우 ```JSON.stringify```를 통해 문자열로 변환하고, 추후 데이터를 꺼낼 때 ```JSON.parse```를 이용하여 원복하는 형태로 이용해야 합니다.
 ## 저장 된 도메인에서만 이용
 Cookie는 로그인 정보를 저장하는데 주로 사용하는 방식인 만큼 보안이 중요합니다.  
-그렇기 떄문에 Javascript로 사용자의 컴퓨터에 저장 된 모든 Cookie를 불러오는 것은 불가능합니다.  
-Cookie를 만약 ```www.naver.com```에서 ```token```이라는 Key로 저장을 했다면, 이를 ```www.facebook.com```에서 ```token```이라는 Key로 참조했을 떄 ```undefined```가 반환되게 됩니다.
+그렇기 때문에 Javascript로 사용자의 컴퓨터에 저장 된 모든 Cookie를 불러오는 것은 불가능합니다.  
+Cookie를 만약 ```www.naver.com```에서 ```token```이라는 Key로 저장을 했다면, 이를 ```www.facebook.com```에서 ```token```이라는 Key로 참조했을 때 ```undefined```가 반환되게 됩니다.
 
 ## 데이터 저장 규칙 정의
 해당 Cookie를 얼마나 유지 할 것인지, 어떤 Location에서 사용할 것인지 등 다양한 옵션을 정의할 수 있습니다.  
