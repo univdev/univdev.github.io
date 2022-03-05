@@ -6,7 +6,17 @@ author:
 date: 2022-03-05 21:44:00 +0900
 categories: [Tech, Talk]
 ---
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6MeB-IWq1I4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="padding-bottom: 56.25%; position: relative;">
+  <iframe
+    style="position: absolute; right: 0; top: 0; right: 0; left: 0;"
+    width="100%"
+    height="100%"
+    src="https://www.youtube.com/embed/6MeB-IWq1I4"
+    title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+</div>
+
 
 > 이 문서는 Deno 전문가의 의견을 담은 게시물이 아닙니다. 필자는 Deno를 사용해 본 적도 없고 전문적인 지식을 가지지도 않았기에 "아 그냥 이런게 있나보다" 정도의 정보만을 제공합니다.
 
