@@ -21,11 +21,11 @@ React의 컴포넌트는 ```state```라고 불리는 상태값과 ```props```라
 위에서 설명한 상황에서 사용할 수 있는 유용한 함수가 있습니다.  
 ```React.memo(component)```는 컴포넌트 본인의 ```state```와 ```props```에 변이가 발생한 상황이 아니라면 해당 컴포넌트는 재연산 과정을 수행하지 않는다고 선언해주는 함수입니다.  
 아래와 같이 사용합니다.
-```typescript
+```tsx
 import { FC, memo } from 'react';
 
 const Component: FC<Props> = (props: Props) => {
-  return (<div></div>);
+  return (<div />);
 };
 
 export default Component;
