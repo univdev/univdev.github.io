@@ -28,7 +28,7 @@ const Component: FC<Props> = (props: Props) => {
   return (<div />);
 };
 
-export default Component;
+export default memo(Component);
 ```
 ## 주의할 점
 > "컴포넌트에게 영향을 미치는 상태값의 수정이 이루어지지 않는다면 렌더링을 하지 않는다."
