@@ -104,6 +104,16 @@ Dialog와 마스크는 사실상 하나의 컴포넌트라고 봐도 무방한�
 # Teleport 이용하기
 ## 사용법
 ```vue
+<template>
+  <teleport to="css-selector">
+    <component />
+  </teleport>
+</template>
+```
+위 처럼 ```teleport``` 태그를 활용하시면 됩니다.  
+```teleport``` 태그는 ```to``` Property를 받는데, 이 Property에 CSS Selector를 넣으면 ```teleport``` 태그 안에 있는 Element들이 해당 셀렉터 내부로 이동합니다. scoped CSS도 정상적으로 동작하고, 컴포넌트의 Life cycle대로 탄생하고 소멸합니다.
+## 예시
+```vue
 <style scoped>
   .dialog__bg {
     position: fixed;
@@ -141,16 +151,6 @@ Dialog와 마스크는 사실상 하나의 컴포넌트라고 봐도 무방한�
   }
 </style>
 
-<template>
-  <teleport to="css-selector">
-    <component />
-  </teleport>
-</template>
-```
-위 처럼 ```teleport``` 태그를 활용하시면 됩니다.  
-```teleport``` 태그는 ```to``` Property를 받는데, 이 Property에 CSS Selector를 넣으면 ```teleport``` 태그 안에 있는 Element들이 해당 셀렉터 내부로 이동합니다. scoped CSS도 정상적으로 동작하고, 컴포넌트의 Life cycle대로 탄생하고 소멸합니다.
-## 예시
-```vue
 <template>
   <div
     v-if="visible"
