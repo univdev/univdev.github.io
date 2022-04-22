@@ -237,7 +237,11 @@ export default defineComponent({
 ```
 위 코드처럼 Teleport 태그를 이용하면 아주 깔끔하고 간단한 방법으로 Dialog를 만들 수 있습니다.  
 예시 코드는 [여기][Vue Dialog]에서 확인 가능합니다.
+# Vue2는 못써요?
+안타깝지만 Vue2에서는 Element를 특정 위치로 보내는 기능이 기본적으로 내장 되어 있지 않습니다.  
+하지만 다행스럽게도 Vue Community에서 [이 기능을 지원하는 라이브러리][Portal Vue]를 제작했습니다.
 
 [React Portal]: https://ko.reactjs.org/docs/portals.html
 [Dialog]: https://firebasestorage.googleapis.com/v0/b/univdev-github-io.appspot.com/o/dialog-example.gif?alt=media&token=37621902-5c60-4426-96bd-5b33948d68a5
 [Vue Dialog]: https://github.com/univdev/vue-dialog
+[Portal Vue]: https://portal-vue.linusb.org/
