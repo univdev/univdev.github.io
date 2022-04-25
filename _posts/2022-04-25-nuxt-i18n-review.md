@@ -3,6 +3,7 @@ title: "'구르미랑 반모' i18n(국제화) 적용기"
 author:
   name: 박 찬영
   link: https://github.com/univdev
+date: 2022-04-25 17:27:00 +0900
 categories: [Tech, Talk]
 tags: [i18n]
 ---
