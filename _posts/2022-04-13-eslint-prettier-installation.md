@@ -132,7 +132,7 @@ module.exports = {
   },
   extends: [
     'plugin:@next/next/recommended',
-    'prettier',
+    "eslint:recommended",
     'airbnb',
   ],
   parser: '@typescript-eslint/parser',
@@ -156,15 +156,15 @@ module.exports = {
 };
 ```
 {: file=".eslintrc.js"}
-위 코드는 제가 적용하고 있는 ESLint입니다. ```extends``` 항목을 보시면 ```prettier```라고 적혀있는 것을 확인하실 수 있는데, 이 부분을 추가하여 ```.prettierrc``` 설정도 ESLint에 추가할 수 있습니다.  
+위 코드는 제가 적용하고 있는 ESLint입니다. ```extends``` 항목을 보시면 ```eslint:recommended```라고 적혀있는 것을 확인하실 수 있는데, 이 부분을 추가하여 ```.prettierrc``` 설정도 ESLint에 추가할 수 있습니다.  
 물론 이를 확장하기 위하여 추가적인 패키지 설치도 필요합니다. 아래 명령어를 입력하시면 됩니다.  
 **NPM**
 ```
-npm i -D eslint-config-prettier
+npm i prettier
 ```
 **Yarn**
 ```
-yarn add -D eslint-config-prettier
+yarn add prettier
 ```
 # Prettier와 ESLint의 차이
 ESLint는 사용하는 프레임워크와 개발 툴에 따른 코드 스타일을 확장하여 적용할 수 있습니다.  
