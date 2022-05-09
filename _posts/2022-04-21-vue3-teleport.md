@@ -233,8 +233,9 @@ export default defineComponent({
   },
 });
 </script>
-{: file="App.vue"}
 ```
+{: file="App.vue"}
+
 위 코드처럼 Teleport 태그를 이용하면 아주 깔끔하고 간단한 방법으로 Dialog를 만들 수 있습니다.  
 예시 코드는 [여기][Vue Dialog]에서 확인 가능합니다.
 # Vue2는 못써요?
