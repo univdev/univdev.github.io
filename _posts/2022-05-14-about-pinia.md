@@ -43,7 +43,7 @@ declare module '@vue/runtime-core' {
   }
 }
 ```
-{: file="somthing.d.ts"}
+{: file="something.d.ts"}
 일단, **상태가 하나 추가 및 수정 될 때마다** 타입 추론을 위해 ```state```의 구조를 나타내는 ```d.ts``` 파일을 별도로 작성합니다.
 ```typescript
 import type { StateType as AType } from './A';
