@@ -15,7 +15,7 @@ tags: [Pinia]
 
 ```Vuex 5```에서 원하던 기능들의 대부분을 이미 ```Pinia```에서 지원하고 있었기에, ```Vuex``` 프로젝트를 유지하는 대신 ```Pinia```를 공식적으로 지원한다고 ```Pinia```의 [공식 문서][Pinia Official]에 적혀 있습니다.
 # 차이점
-그렇다면 왜 명성 자자한 ```Vuex```를 버리고 ```Pinia```를 ```Vue```의 공식 상태 관리자로 지정하게 된 것일까요?
+```Vuex```를 버리고 ```Pinia```를 써야하는 이유에는 어떤 것들이 있을까요?
 ## Typescript 지원
 ### Vuex에서
 ```Vuex```를 이용하여 프로젝트를 구성해보신 적이 있으시다면, ```Vuex```의 상태와 매칭되는 타입 정의가 매우 까다롭다고 생각하셨을 겁니다.
@@ -71,6 +71,7 @@ export const actions: ActionTree<StateType, RootState> = {
 ### Pinia에서
 ```Pinia```는 ```defineStore```라는 함수를 이용하여 각각의 파일마다 별도의 ```store```를 정의하여 ```module```의 기능을 대신합니다.  
 ```vuex```의 ```this.$store```와는 달리 ```pinia```는 ```defineStore```가 반환하는 ```hook```을 이용하여 ```store```에 아주 쉽게 접근할 수 있습니다.
+그렇기에, 반환 된 ```hook```은 내부 구성 요소에 대한 타입을 포함하고 있으며, **타입 추론에 대한 그 어떤 작업도 추가로 필요하지 않습니다.**
 
 ```typescript
 import { defineStore } from 'pinia';
