@@ -3,6 +3,7 @@ title: "Github Issue로 오픈소스 기여하기"
 author:
   name: 박 찬영
   link: https://github.com/univdev
+date: 2022-05-18 18:42:00 +0900
 categories: [Tech, Talk]
 tags: [Github]
 ---

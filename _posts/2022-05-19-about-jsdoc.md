@@ -4,7 +4,8 @@ author:
   name: 박 찬영
   link: https://github.com/univdev
 date: 2022-05-19 11:58:00 +0900
-categories: [Javascript]
+categories: [Tech, Talk]
+tags: [Javascript]
 ---
 # JSDoc
 **JSDoc**은 ```Javascript```로 작성 된 문서에서 각 변수나 함수 등에 의미를 부여하기 위한 마크업 언어입니다.  
