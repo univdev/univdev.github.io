@@ -26,7 +26,7 @@ tags: [Javascript]
 - ```@version``` 라이브러리의 버전 정보를 제공할 때 사용합니다.
 
 # 문법
-```@param`` 처럼 태그를 열고 해당 줄에 정보를 기입합니다.  
+```@param``` 처럼 태그를 열고 해당 줄에 정보를 기입합니다.  
 ```javascript
 /**
   * Creates a new Circle from a diameter.
