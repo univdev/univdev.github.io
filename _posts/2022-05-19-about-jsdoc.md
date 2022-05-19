@@ -38,6 +38,7 @@ categories: [Javascript]
 ```
 위 코드처럼 함수를 정의하시면 ```reates a new Circle from a diameter.```라는 설명과 함께 함수의 파라미터, 리턴값 등이 보여지게 됩니다.
 # 예제
+{%raw%}
 ```javascript
 /** @class Circle representing a circle. */
 class Circle {
