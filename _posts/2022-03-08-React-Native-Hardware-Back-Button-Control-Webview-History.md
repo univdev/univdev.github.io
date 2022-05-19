@@ -67,6 +67,7 @@ React Native의 ```BackHandler``` 모듈을 사용하여 뒤로가기 이벤트�
 # Case 2 (실패)
 > 참조: [ricale.log - React Native Webview 안드로이드 백버튼 처리][Case 2 출처]
 
+{%raw%}
 ```jsx
 export default () => {
   const webview = useRef();
@@ -105,6 +106,7 @@ export default () => {
   );
 }
 ```
+{%endraw%}
 ```onNavigationStateChange``` 이벤트는 ```Webview``` 페이지가 이동을 하게 되면 실행되는 이벤트입니다.  
 여기에는 라우트 정보가 파라미터로 담겨져오게 되는데, ```canGoBack```이라는 Property도 넘어옵니다. 이 Property는 현재 라우트에서 뒤로 갈 수 있는 페이지가 존재하는지 ```true``` ```false```로 알려주는 Property입니다.  
 해당 Property를 ```state```로 관리하여, 값이 ```true```면 ```webview.current.back```을 실행하여 웹뷰 이동을 하고, 아닐 경우 하드웨어 뒤로가기 버튼의 본래 기능을 사용하면 됩니다.
@@ -248,7 +250,7 @@ export default () => {
 };
 ```
 {%endraw%}
-```injectedJavascript``` Property로 Javascript 로직을 전달하여 실행하고, ```onNavigationStateChange```로 받는게 아닌, ```onMessage```로 모든 메시지를 받은 다음, ```state.data```가 ```navigationStateChange```인 데이터만 선별하여 ```canGoBack```을 받아 ```state```에 적용합니다.  
+```injectedJavascript``` Property로 Javascript 로직을 전달하여 실행하고, ```onNavigationStateChange```로 받는게 아닌, ```onMessage```로 모든 메시지를 받은 다음, ```state.data```가 ```navigationStateChange```인 데이터만 선별하여 ```canGoBack```을 받아 ```state```에 적용합니다.
 
 ```useEffect```는 ```state```가 변경 될 때마다 뒤로 가기가 가능한지, 불가능한지를 구분해야 하기 때문에 ```useEffect```의 실행 조건을 ```[isCanGoBack]```으로 설정합니다.
 

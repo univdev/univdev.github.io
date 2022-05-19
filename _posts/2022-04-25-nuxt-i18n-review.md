@@ -85,6 +85,7 @@ export default {
 ```
 {: file="pages/index.vue"}
 기존에 이렇게 정적으로 기입되어 있던 텍스트를 아래와 같이 변경해야 합니다.
+{%raw%}
 ```vue
 <template lang="pug">
   section.content-wrap
@@ -94,6 +95,7 @@ export default {
 </template>
 <!-- 실제 프로젝트의 코드 일부 발췌 -->
 ```
+{%endraw%}
 {: file="pages/index.vue"}
 위 코드는 아래와 같은 구조의 언어팩에서 해당 텍스트를 가져오는 것을 의미합니다.
 ```javascript
@@ -125,6 +127,7 @@ export default {
 };
 ```
 ```computed``` Property를 활용하면 ```nuxt.configs.js```에서 설정했던 ```locales```를 Array 형태로 불러올 수 있습니다.
+{%raw%}
 ```vue
 <template lang="pug">
   .lang-box
@@ -135,6 +138,7 @@ export default {
       @click.prevent.stop="onChangeLanguage(locale.code)") {{ locale.name }}
 </template>
 ```
+{%endraw%}
 불러온 ```locales``` 정보를 기반으로 UI를 배치합니다.  
 그런데 단순히 UI를 배치하는 것뿐 아니라 선택 된 언어에 대응되는 버튼에 특수 효과를 부여하고 싶을 수 있습니다.
 ```javascript
@@ -148,6 +152,7 @@ export default {
 ```
 ```$18n.locale``` Property에는 현재 선택 된 언어의 ```code``` 정보가 담겨 있습니다.  
 이를 기반으로 ```class```를 할당하여 특수 효과를 넣을 수 있습니다. 아래와 같이 말이죠.
+{%raw%}
 ```vue
 <template lang="pug">
   a(
@@ -158,6 +163,7 @@ export default {
     @click.prevent.stop="onChangeLanguage(locale.code)") {{ locale.name }}
 </template>
 ```
+{%endraw%}
 그럼 이제 언어를 변경할 수 있는 UI도 만들었으니 실제로 언어를 변경할 수 있게끔 해줘야겠죠?
 ```javascript
 export default {
@@ -176,7 +182,7 @@ export default {
 아주 만약, 언어팩 설정에 따라 동일한 페이지의 경로를 다르게 보여주고 싶다면 [이 방법][custom-path]을 고려해보실 수도 있어요.
 ## nuxt-link 수정하기
 기존에 작성 된 ```nuxt-link```로 네비게이션을 이용하여 ```/en/usage``` 페이지에서 ```/en/careticons``` 페이지로 이동하고자 했는데 네비게이션을 클릭하니까 ```en/usage```에서 ```/careticons``` 페이지로 이동하는 문제가 발견되었습니다.  
-
+{%raw%}
 ```vue
 <template>
   <nuxt-link
@@ -185,6 +191,7 @@ export default {
     :to="switchLocalePath(locale.code)">{{ locale.name }}</nuxt-link>
 </template>
 ```
+{%endraw%}
 [공식 문서][nuxt - i18n lang-switcher]를 참고하니 ```switchLocalePath```라는 함수를 이용해야 하는 것 같습니다.  
 그런데 이미 모든 페이지에서 네비게이션을 사용하고 있기에 이를 모두 수정하기는 매우 번거롭고, ```nuxt-link``` 태그마다 ```switchLocalePath``` 함수를 사용하여 경로를 래핑해주는 것도 별로 보기 좋지 않습니다.
 

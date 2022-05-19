@@ -37,5 +37,4 @@ export const nl2br = text => {
 };
 
 export default text2html;
-
 ```

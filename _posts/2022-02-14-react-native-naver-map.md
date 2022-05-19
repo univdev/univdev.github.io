@@ -80,6 +80,7 @@ pod install
 ```
 마지막으로 ```ios``` 폴더에서 ```pod install```을 입력하여 iOS에서 사용할 패키지를 연동해줍니다.
 # 실제 사용
+{%raw%}
 ```jsx
 import NaverMapView, {Circle, Marker, Path, Polyline, Polygon} from "react-native-nmap";
 
@@ -104,6 +105,7 @@ function MyMap() {
     </NaverMapView>
 }
 ```
+{%endraw%}
 {: file="example/App.jsx" }
 ```react-native-nmap``` 패키지는 지도를 구성하기 위한 각종 컴포넌트를 제공합니다.  
 ```NaverMapView```는 우리가 보는 지도 그 자체를 표시하는 View이고, 이 지도 내부에서 사용할 ```Marker``` ```Polygon``` ```Circle```도 사용할 수 있습니다.  
