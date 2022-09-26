@@ -17,9 +17,8 @@ categories: [Javascript]
 export const getRectPoint = (
   x: number,
   y: number,
-  degree: number
+  radian: number
 ): Point => {
-  const radian = degree2Radian(degree);
   const left = (x) * Math.cos(radian) - (y) * Math.sin(radian) + p;
   const top = (x) * Math.sin(radian) + (y) * Math.cos(radian) + q;
 
@@ -44,9 +43,8 @@ export const getRectPoint = (
   y: number,
   p: number,
   q: number,
-  degree: number
+  radian: number
 ): Point => {
-  const radian = degree2Radian(degree);
   const left = (x - p) * Math.cos(radian) - (y - q) * Math.sin(radian) + p;
   const top = (x - p) * Math.sin(radian) + (y - q) * Math.cos(radian) + q;
 
@@ -54,7 +52,10 @@ export const getRectPoint = (
 };
 ```
 
-> 기존에 `(0, 0)`을 기준으로 작성 된 코드에서, 회전축의 좌표를 추가로 입력 받을 수 있는 매개변수 `p`와 `q`를 추가했어요.  
+> 기존에 `(0, 0)`을 기준으로 작성 된 코드에서, 회전축의 좌표를 추가로 입력 받을 수 있는 매개변수 `p`와 `q`를 추가했어요.
+
+# 주의
+**본 소스코드에 사용 된 회전 값은 `radian`이므로, `degree` 값을 넣을 시 정상 동작하지 않습니다!**
 
 # 레퍼런스
 [Stackoverflow - Get rotated rectangle points from x, y, width, height and rotation][레퍼런스]
