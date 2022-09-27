@@ -38,6 +38,7 @@ export const getRectPoint = (
 # 문제점
 다만 이 소스코드는 회전축이 매번 `(0, 0)`으로 고정되어 있어요. 하지만 제가 필요로 하는 것은 회전축이 상황에따라 변경되어도 정상적으로 작동하는 로직이기에 기존 소스코드에서 약간 수정하여 해당 기능을 완성했어요.
 
+# 완성 된 코드
 ```typescript
 export const getRectPoint = (
   x: number,
