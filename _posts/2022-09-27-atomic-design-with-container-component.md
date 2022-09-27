@@ -194,3 +194,7 @@ export default Page;
 {: file="Page.tsx"}
 
 페이지는 이제 `Middleware`나 라우팅 관련 로직만을 처리할 수 있도록 코드를 깔끔하게 분리할 수 있겠네요!
+# 레퍼런스
+[Effective Atomic Design][레퍼런스]
+
+[레퍼런스]: https://kciter.so/posts/effective-atomic-design
