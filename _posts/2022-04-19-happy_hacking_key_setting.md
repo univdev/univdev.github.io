@@ -42,7 +42,13 @@ _이미지 출처: https://karabiner-elements.pqrs.org/docs/manual/configuration
 _이미지 출처: https://karabiner-elements.pqrs.org/docs/manual/configuration/configure-complex-modifications/_
 상단에 있는 ```import more rules from the internet``` 버튼을 누르면 웹브라우저가 열리며, 다른 사람들이 만들어둔 카라비너 키세팅을 다운 받을 수 있습니다.
 
+[제가 사용하는 키세팅][키세팅] 파일도 공유해드립니다!  
+만약 이를 적용하고자 하신다면 `~/.config/karabiner` 경로에 `karabiner.json` 파일로 저장하시면 됩니다.
+
+긴 글 읽어주셔서 감사합니다!
+
 [딥스위치]: https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FeXjAWo%2FbtrdOnht2o2%2FRzw37bhZkjko92Gb8xRjGk%2Fimg.png
 [카라비너 규칙 추가]: https://karabiner-elements.pqrs.org/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-1@2x.png
 [카라비너 규칙 임포트]: https://karabiner-elements.pqrs.org/docs/manual/configuration/configure-complex-modifications/images/karabiner-elements-complex-modifications-2@2x.png
 [카라비너]: https://karabiner-elements.pqrs.org/
+[키세팅]: https://gist.github.com/univdev/df71a099a151bcd3ad70d1333419af3b
