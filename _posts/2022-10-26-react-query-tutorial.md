@@ -51,7 +51,7 @@ React Query는 무한 스크롤의 손쉬운 구현을 위해 `useInfiniteQuery`
 - 네트워크 요청이 모종의 이유로 한 번 끊길 경우를 대비하여 재시도 횟수를 설정할 수 있습니다.
 
 위와 같이 직접 구현하기에는 정말 매우 번거로울 것 같지만 반드시 필요한 기능들을 처리해주는 라이브러리라고 이해해주시면 될 것 같습니다.
-# 직접 사용해보기
+# 시작해보기
 > 본문에서는 바닐라 React Query가 아닌 @tanstack/react-query를 사용합니다.
 
 ## 설치
@@ -70,10 +70,10 @@ import {
   useQueryClient,
   QueryClient,
   QueryClientProvider,
-} from '@tanstack/react-query'
+} from '@tanstack/react-query';
 
 // Create a client
-const queryClient = new QueryClient()
+const queryClient = new QueryClient();
 
 function App() {
   return (
@@ -87,5 +87,95 @@ function App() {
 ```
 대부분의 React 라이브러리가 그렇듯 서비스의 최상단에 Context를 래핑해줘야 합니다.  
 래핑을 하셨다면 이제 하위 모든 페이지 혹은 컴포넌트에서 React Query의 다양한 Hook들을 사용하실 수 있습니다.
+# Hooks
+## useQuery
+`useQuery` Hook은 API를 한 개 요청하고 결과값을 받아올 때 쓰이는 Hook이기에, 가장 보편적이고 많이 쓰입니다.  
+```tsx
+{%raw%}
+export const App = () => {
+  const { isLoading, data } = useQuery(['user', 1], () => fetch('/api/users/1').then((res) => res.json()));
+};
+{%endraw%}
+```
+위와 같이 사용하실 수 있습니다.  
+첫번째 인자로 들어가는 배열에는 **'이 요청이 어떤 API를 호출했는지 구분할 수 있는 식별 키'**가 들어갑니다.  
+아까 위에서 동일한 네트워크 요청이 여러 횟수 발생하면 있는거 재활용해서 쓴다고 했었죠? 그 로직을 처리할 때 사용됩니다. 동일한 식별 키의 요청이 들어오면 재활용 할지 새로 불러올지 라이브러리가 알아서 선택하는거죠.
+
+두번째 인자로는 `Promise`를 Return하는 함수가 포함되어야 합니다.  
+여기서 반환되는 `Promise`가 성공적으로 완료되면 해당 Hook이 반환하는 `data` Property에 결과값이 적용됩니다.  
+`Promise`가 아직 처리되지 않았다면 `isLoading` Property가 `true`가 되기에 로딩 UI 처리도 손쉽게 하실 수 있습니다.
+## useQueries
+이름만 봐도 대충 뭔지 아시겠죠?  
+동시에 여러 API 요청을 처리하기 위해 만들어진 Hook입니다. 그냥 단순히 `useQuery`를 여러개 핸들링하기 귀찮으니 이를 하나로 묶어둔거라 사용법도 완전히 동일합니다.  
+```typescript
+const results = useQueries({
+  queries: [
+    { queryKey: ['post', 1], queryFn: fetchPost, staleTime: Infinity},
+    { queryKey: ['post', 2], queryFn: fetchPost, staleTime: Infinity}
+  ]
+})
+```
+파라미터에는 `object` 타입의 객체를 전달받으며, `queries` Property에 위 코드와 같이 배열로 처리할 요청과 고유 키, 옵션 등을 보내면 됩니다.
+## useInfiniteQuery
+위에서 예시로 잠깐 나왔던 무한 스크롤 기법을 만들기 위해 필요한 보편적인 로직을 제공하는 Hook입니다.  
+```typescript
+const {
+  fetchNextPage, // 다음 페이지 데이터를 불러올 수 있는 함수
+  fetchPreviousPage, // 이전 페이지 데이터를 불러올 수 있는 함수
+  hasNextPage, // 다음 페이지가 존재하는지 구분할 수 있는 식별자
+  hasPreviousPage, // 이전 페이지가 존재하는지 구분할 수 있는 식별자
+  isFetchingNextPage, // 다음 페이지를 불러오고 있는 중인지 구분할 수 있는 식별자
+  isFetchingPreviousPage, // 이전 데이터를 불러오고 있는 중인지 구분할 수 있는 식별자
+  ...result // etc...
+} = useInfiniteQuery(queryKey, ({ pageParam = 1 }) => fetchPage(pageParam), {
+  ...options,
+  getNextPageParam: (lastPage, allPages) => lastPage.nextCursor,
+  getPreviousPageParam: (firstPage, allPages) => firstPage.prevCursor,
+})
+```
+단순히 다음 페이지를 불러오는 방식만 고려한 것이 아니라 양방향 스크롤도 고려하여 만들어졌기에 유연하게 사용하실 수 있습니다.
+## 그 외
+가장 많이 쓰이는 세가지 Hook에 대해서 알아봤습니다.  
+그 외에도 `Parallel Queries`나 `Dependent Queries` 등 다양한 상황에서 활용하실 수 있는 Hook들이 존재합니다.
+# Tanstack Devtools 설치하기
+저는 React Query를 사용할 때 오리지널 버전보다는 `Tanstack`에서 만든 `@tanstack/react-query`를 사용하는데요.  
+`Tanstack`팀에서 제작한 강력한 개발툴을 확장해서 사용할 수 있기 때문입니다.
+
+우선 Devtools를 설치하기 위해 아래 명령어를 입력해줍니다.
+```
+npm i -S @tanstack/react-query-devtools
+# or
+yarn add @tanstack/react-query-devtools
+```
+그 다음, React Query Context를 사용했던 위치로 돌아가서 Context 바로 아래에 `<ReactQueryDevtools />`를 추가합니다.  
+```tsx
+{%raw%}
+import {
+  useQuery,
+  useMutation,
+  useQueryClient,
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+
+// Create a client
+const queryClient = new QueryClient();
+
+function App() {
+  return (
+    // Provide the client to your App
+    <QueryClientProvider client={queryClient}>
+      <ReactQueryDevtools />
+      <Todos />
+    </QueryClientProvider>
+  )
+}
+{%endraw%}
+```
+
+그러면 다음과 같이 React Query로 호출한 모든 네트워크의 상태를 관찰할 수 있는 개발 도구가 표시됩니다. 🎉  
+![React Query Debugger](https://raw.githubusercontent.com/univdev/markdown-images/master/20221026150737.png)
+_React Query Debugger_
 
 [React Query]: https://tanstack.com/query/v4
