@@ -4,7 +4,7 @@ author:
   name: "박 찬영"
   link: "https://github.com/univdev"
 date: 2022-10-28 09:56:00 +0900
-categories: ["Tech", "Talk"]
+categories: ["Tech", "Javascript"]
 tags: ["비교", "Element", "Javascript"]
 ---
 # 개요

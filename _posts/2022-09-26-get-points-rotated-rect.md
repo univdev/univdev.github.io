@@ -4,7 +4,7 @@ author:
   name: 박 찬영
   link: https://github.com/univdev
 date: 2022-09-26 21:04:00 +0900
-categories: [Javascript]
+categories: ["Tech", "Javascript"]
 ---
 # 개요
 ![사각형의 각 꼭짓점][사각형]
