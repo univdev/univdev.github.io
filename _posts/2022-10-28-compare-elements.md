@@ -35,8 +35,12 @@ console.log(
 ); // true
 ```
 ## isEqualNode
-`isEqualNode`는 A Element와 B Element가 **서로 같은 이름의 태그인지 비교합니다.**  
-서로 지칭하는 Element가 다르더라도 태그의 이름이 동일하다면 `true`를 반환합니다.
+`isEqualNode`는 A Element와 B Element가 **서로 같은 성질을 가지고 있는지 판단합니다.**  
+여기서 같은 성질이란, 태그의 이름이나 속성, 하위에 존재하는 자식들이 동일한지에 따라 판단하게 됩니다.  
+물론 자식을 보유할 수 없는 태그도 있고, 태그마다 허용하는 속성이 모두 다 다르니 노드의 유형에 따라 달라진다고 합니다.
+
+> The specific set of data points that must match varies depending on the types of the nodes.
+
 ## isSameNode
 `isSameNode`는 A Element와 B Element가 **완전히 동일한 대상을 지칭하는지 확인합니다.**  
 단순히 태그 이름이 같을 뿐 아니라, Element의 `UniqueID`를 비교하여 아예 동일한 대상이라면 `true`를 반환합니다.
