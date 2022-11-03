@@ -23,7 +23,7 @@ Tooltip이나 Modal 컴포넌트가 바로 그 대표적인 예시입니다.
 ```tsx
 {% raw %}
 const Modal = (props: ModalProps) => {
-  const Component = React.createComponent('div', { ...props }, props.children);
+  const Component = React.createComponent('div', { ...props }, props.children);
   const portal = ReactDOM.createPortal(Component, document.body);
 
   return Portal
@@ -45,7 +45,7 @@ const App = () => {
 ```tsx
 {% raw %}
 const Modal = (props: ModalProps) => {
-  const Component = React.createComponent('div', { ...props }, props.children);
+  const Component = React.createComponent('div', { ...props }, props.children);
   const portal = ReactDOM.createPortal(Component, document.body);
 
   return Portal
@@ -64,7 +64,7 @@ Next는 별도의 설정을 하지 않는다면 SSR / CSR을 동시에 진행하
 const Modal = (props: ModalProps) => {
   if (typeof window === 'undefined') return <></>;
 
-  const Component = React.createComponent('div', { ...props }, props.children);
+  const Component = React.createComponent('div', { ...props }, props.children);
   const portal = ReactDOM.createPortal(Component, document.body);
 
   return Portal
@@ -93,7 +93,7 @@ const Modal = (props: ModalProps) => {
   if (typeof window === 'undefined') return <></>;
   if (!isCSR) return <></>;
 
-  const Component = React.createComponent('div', { ...props }, props.children);
+  const Component = React.createComponent('div', { ...props }, props.children);
   const portal = ReactDOM.createPortal(Component, document.body);
 
   return Portal
