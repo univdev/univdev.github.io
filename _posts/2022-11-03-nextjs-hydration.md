@@ -4,8 +4,8 @@ date: 2022-11-03 10:53:00 +0900
 author:
   name: 박 찬영
   link: https://github.com/univdev
-categories: ["Tech", "Nextjs"]
-tags: ["Nextjs", "React", "Hydration"]
+categories: ["Tech", "Next.js"]
+tags: ["Next.js", "React", "Hydration"]
 ---
 # Hydration
 ![Hydration](https://raw.githubusercontent.com/univdev/markdown-images/master/20221103113303.png)

@@ -4,8 +4,8 @@ date: 2022-11-03 10:53:00 +0900
 author:
   name: 박 찬영
   link: https://github.com/univdev
-categories: ["Tech", "Nextjs"]
-tags: ["Nextjs", "React", "Portal"]
+categories: ["Tech", "Next.js"]
+tags: ["Next.js", "React", "Portal"]
 ---
 # React Portal
 웹을 제작하다보면 대부분의 경우 계층 구조로 컴포넌트를 배치하여 렌더링하는 방식으로 문제를 해결할 수 있습니다.  
