@@ -54,6 +54,7 @@ import styles from "./styles.css";
 `import`한 패키지를 실제로 사용하지 않았을 때 해당 패키지의 `import` 구문을 자동으로 제거해줍니다.
 
 ```tsx
+{% raw %}
 import React from 'react'
 import _ from 'lodash';
 
@@ -62,12 +63,14 @@ export const App = React.Memo(() => {
     <div className="App"></div>
   ));
 }
+{% endraw %}
 ```
 {: file="App.tsx" }
 
 ⬇️
 
 ```tsx
+{% raw %}
 import React from 'react'
 
 export const App = React.Memo(() => {
@@ -75,11 +78,13 @@ export const App = React.Memo(() => {
     <div className="App"></div>
   ));
 }
+{% endraw %}
 ```
 {: file="App.tsx" }
 
 # ESLint 규칙 작성
 ```json
+{% raw %}
 {
   "extends": "next",
   "plugins": [
@@ -112,5 +117,6 @@ export const App = React.Memo(() => {
     "comma-spacing": ["error", { "before": false, "after": true }]
   }
 }
+{% endraw %}
 ```
 {: file=".eslintrc.json" }
