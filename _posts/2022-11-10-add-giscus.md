@@ -34,8 +34,8 @@ _드디어 추가한 댓글 확장 프로그램_
 Utterances와 Giscus는 둘 다 Github API를 사용하여 댓글을 저장한다는 공통점이 있습니다.  
 Github의 Repository에 댓글을 저장하여 API로 불러와서 사용하는 형태예요.
 
-두 서비스의 가장 큰 차이점은, Utterances는 Issue를, Giscus는 Discussions를 사용한다는 점입니다.  
-개인적으로, 댓글을 저장하기 위한 저장소로 사용하기에 Issue는 맞지가 않는 것 같아, Giscus의 철학을 따르게 되었습니다.
+두 서비스의 가장 큰 차이점은 Utterances는 Issue를, Giscus는 Discussions를 사용한다는 점입니다.  
+개인적으로 댓글을 저장하기 위한 저장소로 사용하기에 Issue는 맞지가 않는 것 같아 Giscus의 철학을 따르게 되었습니다.
 # Giscus 앱 설치
 1. [giscus 앱][앱 다운로드 페이지]을 **'댓글을 저장할 Repository'**에 설치해주세요.
 
