@@ -4,7 +4,7 @@ author:
   name: 박 찬영
   link: https://github.com/univdev
 date: 2022-10-26 00:54:00 +0900
-categories: [Tech, Talk]
+categories: [Tech, React Query]
 tags: [React, React Query]
 ---
 ![React Query](https://raw.githubusercontent.com/univdev/markdown-images/master/20221026005504.png)
