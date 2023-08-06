@@ -5,7 +5,7 @@ author:
   link: https://github.com/univdev
 date: 2022-04-13 10:24:00 +0900
 categories: [Tech, Talk]
-tags: [eslint, pritter, clean code]
+tags: [ESLint, pritter, clean code]
 ---
 # ESLint
 ESLint는 코드를 보다 예쁘고 일관성있게 관리하기 위한 최소한의 제한사항입니다.  
