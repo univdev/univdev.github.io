@@ -7,7 +7,7 @@ date: 2022-11-18 09:58:00 +0900
 categories: ["Tech", "Next.js"]
 tags: ["Next.js", "ESLint"]
 ---
-# 패키지 설치
+# Package 설치
 더욱 정교한 Formatting을 위해 플러그인을 설치합니다.  
 ```
 yarn add -D eslint-plugin-simple-import-sort eslint-plugin-unused-imports
@@ -18,7 +18,7 @@ npm install -D eslint-plugin-simple-import-sort eslint-plugin-unused-imports
 ```
 
 ## eslint-plugin-simple-import-sort
-`import` 패키지를 알파벳 순서대로 Sorting 하고, 절대경로로 import 된 그룹과 상대경로로 import 된 그룹을 자동으로 분리시켜 줍니다.
+import한 Package를 알파벳 순서대로 Sorting 하고, 절대경로로 import 된 그룹과 상대경로로 import 된 그룹을 자동으로 분리시켜 줍니다.
 ```ts
 import React from "react";
 import Button from "../Button";
@@ -51,7 +51,7 @@ import styles from "./styles.css";
 {: file="App.tsx" }
 
 ## eslint-plugin-unused-imports
-`import`한 패키지를 실제로 사용하지 않았을 때 해당 패키지의 `import` 구문을 자동으로 제거해줍니다.
+import한 Package를 실제로 사용하지 않았을 때 해당 Package의 Import 구문을 자동으로 제거해줍니다.
 
 ```tsx
 {% raw %}
