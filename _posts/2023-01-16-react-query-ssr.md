@@ -14,10 +14,10 @@ React Query는 서버와 클라이언트 사이에서 데이터를 관리하기 
 
 # SSR 환경에서 사용하기
 React Query는 `useQuery`라는 `hook`을 이용하여 사용하는 점에서 알 수 있듯이 클라이언트 렌더링 때 데이터를 호출하고 관리하는 라이브러리입니다.  
-그러다보니 웹 서버에 제일 처음 접속하여 수신 받는 HTML 문서에는 API 호출 이후에 렌더링 되는 객체들이 전혀 존재하지 않습니다.  
+그러다보니 웹 서버에 제일 처음 접속하여 수신 받는 HTML 문서에는 **API 호출 이후에 렌더링 되는 데이터들**이 전혀 존재하지 않습니다.  
 이는 초기 로딩 속도 및 검색 엔진 최적화에서 그다지 바람직하지 않아요.
 
-이 문제를 해결하기 위해 React Query 공식 페이지에서 알려주는 솔루션에 대해서 소개합니다.ㅅ
+이 문제를 해결하기 위해 React Query 공식 페이지에서 알려주는 솔루션에 대해서 소개합니다.
 ## Solution 1
 Next.js 환경에서 SSR을 구현하기 위한 보편적인 방법은 `getStaticProps` 함수 혹은 `getServerSideProps`를 사용하는 것입니다.
 {% raw %}
@@ -33,7 +33,7 @@ export const getServerSideProps = () => {
 };
 ```
 {% endraw %}
-위 코드를 사용하면 api 라는 Endpoint에 데이터를 호출하여 CSR 타이밍 이전에 데이터를 가져온 뒤, props 객체에 데이터를 담아 페이지 렌더링을 진행할 수 있습니다.
+위 코드를 사용하면 api 라는 Endpoint에 데이터를 호출하여 SSR에서 데이터를 가져온 뒤, props 객체에 데이터를 담아 페이지 렌더링을 진행할 수 있습니다.
 {% raw %}
 ```tsx
 const getData = () => fetch(api).then((r) => r.json()).then((r) => r);
