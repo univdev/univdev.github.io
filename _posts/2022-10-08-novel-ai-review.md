@@ -4,7 +4,7 @@ author:
   name: 박 찬영
   link: https://github.com/univdev
 categories: [Tech, Talk]
-tags: [novelai, 일러스트]
+tags: [NovelAI, 일러스트]
 date: 2022-10-08 19:40:00 +0900
 ---
 [![Novel AI](https://raw.githubusercontent.com/univdev/markdown-images/master/20221008194553.png)][Novel AI]
