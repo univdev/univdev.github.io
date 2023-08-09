@@ -104,7 +104,7 @@ yarn add @amplitude/analytics-browser
 ![대시보드](/assets/img/posts/2023-08-06-23-38-43.png)  
 [Amplitude Dashboard 페이지](https://app.amplitude.com/analytics/pixo/home)에서 **[Data]** 항목을 선택합니다.
 
-![이벤트 목록](assets/img/posts/2023-08-06-23-39-12.png)  
+![이벤트 목록](/assets/img/posts/2023-08-06-23-39-12.png)  
 좌측 메뉴의 **[Event]** 탭을 클릭하면 프로젝트에 설정 된 이벤트를 볼 수 있습니다.
 ### Taxonomy Status
 ![](/assets/img/posts/2023-08-06-23-39-54.png)  
