@@ -1,5 +1,5 @@
 ---
-title: "Amplitude를 이용한 Taxonomy 연동 가이드"
+title: "사용자의 액션을 분석해보자! Amplitude의 Taxonomy 연동 방법"
 author:
   name: "박 찬영"
   link: https://github.com/univdev
@@ -7,8 +7,7 @@ categories: [Tech, Talk]
 tags: [Taxonomy, Amplitude, React]
 date: 2023-08-06 23:25:00 +0900
 ---
-## 목차
-- [목차](#목차)
+- [들어가며](#들어가며)
 - [Amplitude란?](#amplitude란)
 - [Taxonomy](#taxonomy)
 - [Amplitude Browser SDK 설치](#amplitude-browser-sdk-설치)
@@ -27,6 +26,10 @@ date: 2023-08-06 23:25:00 +0900
   - [#1. 계획은 나중에 등록하고 일단 코딩부터 할 때](#1-계획은-나중에-등록하고-일단-코딩부터-할-때)
   - [#2. 사전에 계획하지 못한 행동을 수집할 때](#2-사전에-계획하지-못한-행동을-수집할-때)
 
+## 들어가며
+안녕하세요 😀 박찬영입니다.  
+저는 회사에서 신규 서비스 런칭을 앞두고 있기 때문에 정말 많은 Task가 몰아치는 하루를 보내고 있어요 😭  
+그렇게 해결했던 수많은 Task 중 문서로 남겨두면 유용할 법한 내용을 가져왔어요!
 ## Amplitude란?
 Amplitude는 서비스의 사용성을 증대시키는데 도움을 줄 수 있는 다양한 정보를 수집하고 응용하기 위한 서비스입니다.
 
@@ -163,7 +166,7 @@ track({
 ```
 
 만약 연결하는데 성공했을 경우 해당 이벤트를 발생시키면 브라우저 개발자도구 [Network] 탭에서 다음과 같은 요청을 볼 수 있습니다.  
-![Amplitude Network Request](assets/img/posts/2023-08-06-23-42-51.png)  
+![Amplitude Network Request](/assets/img/posts/2023-08-06-23-42-51.png)  
 짧은 순간에 여러 차례의 이벤트 송신이 발생하면 일정시간 뒤에 발생했던 요청들을 한번에 묶어서 전송하는 모습을 보실 수 있습니다.
 
 이 로직은 `@amplitude/analytics-browser` 라이브러리가 내부적으로 처리하기 때문에 개발자 입장에서는 고려할 필요가 없다는 장점이 있습니다.
