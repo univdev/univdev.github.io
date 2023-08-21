@@ -22,6 +22,14 @@
   padding-right: $pr;
 }
 
+#toc {
+  padding: 0;
+  &, ul {
+    list-style: none;
+    margin: 0;
+  }
+}
+
 %text-color {
   color: var(--text-color);
 }
