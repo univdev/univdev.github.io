@@ -96,7 +96,6 @@ tags: [Tech, Talk]
 
 위와 같은 고민을 녹여 DummyDelay Class를 작성했습니다.
 
-{% raw %}
 ```tsx
 /**
  * API와 같은 다양한 비동기 호출에서 고의적으로 딜레이를 시켜서 로딩 화면을 보여주기 위한 클래스입니다.
@@ -139,7 +138,6 @@ export class DummyDelay {
   }
 };
 ```
-{% endraw %}
 
 `DummyDelay.start` 메소드는 다음과 같은 절차에 의해 실행 됩니다.
 
