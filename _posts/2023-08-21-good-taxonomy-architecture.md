@@ -6,8 +6,8 @@ author:
 date: 2023-08-21 11:54:00 +0900
 categories: [Tech, Architecture]
 tags: [React, Architecture, Taxonomy]
+toc: true
 ---
-# Taxonomy 대응을 위한 아키텍처
 
 # 들어가기 전에
 안녕하세요 박찬영입니다 🙂
