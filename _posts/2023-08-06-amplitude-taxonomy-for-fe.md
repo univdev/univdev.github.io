@@ -7,25 +7,6 @@ categories: [Tech, Talk]
 tags: [Taxonomy, Amplitude, React]
 date: 2023-08-06 23:25:00 +0900
 ---
-- [들어가며](#들어가며)
-- [Amplitude란?](#amplitude란)
-- [Taxonomy](#taxonomy)
-- [Amplitude Browser SDK 설치](#amplitude-browser-sdk-설치)
-  - [npm](#npm)
-  - [yarn](#yarn)
-- [SDK 설정](#sdk-설정)
-  - [Amplitude API Key 발급](#amplitude-api-key-발급)
-  - [프로젝트 적용](#프로젝트-적용)
-- [계획 된 이벤트 설정 방법](#계획-된-이벤트-설정-방법)
-  - [이벤트 목록 확인하기](#이벤트-목록-확인하기)
-  - [Taxonomy Status](#taxonomy-status)
-  - [이벤트 수집 계획 작성하기](#이벤트-수집-계획-작성하기)
-  - [이벤트 프로퍼티](#이벤트-프로퍼티)
-- [Amplitude에 이벤트 전송하기](#amplitude에-이벤트-전송하기)
-- [선 송신 후 계획](#선-송신-후-계획)
-  - [#1. 계획은 나중에 등록하고 일단 코딩부터 할 때](#1-계획은-나중에-등록하고-일단-코딩부터-할-때)
-  - [#2. 사전에 계획하지 못한 행동을 수집할 때](#2-사전에-계획하지-못한-행동을-수집할-때)
-
 ## 들어가며
 안녕하세요 😀 박찬영입니다.  
 저는 회사에서 신규 서비스 런칭을 앞두고 있기 때문에 정말 많은 Task가 몰아치는 하루를 보내고 있어요 😭  
