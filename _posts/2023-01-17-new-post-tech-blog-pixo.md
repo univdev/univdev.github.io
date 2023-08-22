@@ -5,6 +5,9 @@ author:
   link: https://github.com/univdev
 date: 2023-01-17 10:12:00 +0900
 categories: [Life, Talk]
+image:
+  path: https://raw.githubusercontent.com/univdev/markdown-images/master/20230117110620.png
+  alt: "기술 블로그 살리기, TF부터 글 작성 까지의 일대기"
 ---
 ![기술 블로그 살리기, TF부터 글 작성까지의 일대기](https://raw.githubusercontent.com/univdev/markdown-images/master/20230117110620.png)
 

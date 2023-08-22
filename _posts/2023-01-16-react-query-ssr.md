@@ -6,6 +6,9 @@ author:
 date: 2023-01-16 18:00:00 +0900
 categories: [Tech, React Query]
 tags: [React, Next.js, React Query]
+image:
+  path: https://raw.githubusercontent.com/univdev/markdown-images/master/20230116184315.png
+  alt: "SSR 환경에서의 React Query"
 ---
 ![React Query](https://raw.githubusercontent.com/univdev/markdown-images/master/20230116184315.png)  
 

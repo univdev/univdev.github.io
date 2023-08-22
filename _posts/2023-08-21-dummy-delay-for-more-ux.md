@@ -5,7 +5,12 @@ author:
   link: "https://github.com/univdev"
 date: 2023-08-21 20:23:00 +0900
 tags: [Tech, Talk]
+image:
+  path: /assets/img/posts/2023-08-22-15-50-16.png
+  alt: "사용자 경험을 위한 의도적인 비효율"
 ---
+![사용자 경험을 위한 의도적인 비효율](/assets/img/posts/2023-08-22-15-50-16.png)
+
 안녕하세요 👋 박찬영입니다.
 
 오늘은 사용자의 경험을 증가 시키기 위해 의도적으로 소프트웨어의 응답을 늦추는 사례에 대해서 소개하고자 해요.

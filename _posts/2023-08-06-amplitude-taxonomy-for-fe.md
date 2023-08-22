@@ -6,7 +6,11 @@ author:
 categories: [Tech, Talk]
 tags: [Taxonomy, Amplitude, React]
 date: 2023-08-06 23:25:00 +0900
+image:
+  path: /assets/img/posts/2023-08-22-15-48-49.png
+  alt: Amplitude Taxonomy 연동 가이드
 ---
+![Amplitude Taxonomy 연동 가이드](/assets/img/posts/2023-08-22-15-48-49.png)
 ## 들어가며
 안녕하세요 😀 박찬영입니다.  
 저는 회사에서 신규 서비스 런칭을 앞두고 있기 때문에 정말 많은 Task가 몰아치는 하루를 보내고 있어요 😭  

@@ -4,7 +4,11 @@ author:
   name: 박 찬영
   link: https://github.com/univdev
 categories: [Tech, Talk]
+image:
+  path: assets/img/posts/2023-08-22-15-51-28.png
+  alt: "Headless 브라우저를 이용한 스냅샷 촬영 구현"
 ---
+![Headless 브라우저를 이용한 스냅샷 촬영 구현](/assets/img/posts/2023-08-22-15-51-28.png)
 
 ## 들어가며
 요즘 업무가 바빠 기술 블로그에 글을 투고 한지 너무 오래 되었다는 것도 잊고 있었습니다.  
