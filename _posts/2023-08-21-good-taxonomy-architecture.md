@@ -7,15 +7,19 @@ date: 2023-08-21 11:54:00 +0900
 categories: [Tech, Architecture]
 tags: [React, Architecture, Taxonomy]
 toc: true
+render_with_liquid: false
+image:
+  path: /assets/img/posts/2023-08-23-19-32-03.png
+  alt: "Taxonomy 대응을 위한 좋은 아키텍처"
 ---
+![Taxonomy 대응을 위한 좋은 아키텍처](/assets/img/posts/2023-08-23-19-32-03.png)
 
-# 들어가기 전에
 안녕하세요 박찬영입니다 🙂
 
 이번 포스트에서는 Taxonomy를 연동하면서 겪었던 어려운 문제와 Challenge 경험을 공유하기 위해 작성합니다.
 동일한 문제를 앓았거나 앓을 예정이신 분들께서 보시고 좋은 영감을 얻어가셨으면 좋겠습니다.
 
-## Taxonomy란?
+# Taxonomy란?
 본 문서의 이해를 위해 간단하게 설명하자면 **‘유저의 행동 패턴을 분석하기 위한 방법’** 입니다.
 
 사용자는 대부분의 경우 개발자의 의도대로 움직여주지 않습니다.  
@@ -79,8 +83,7 @@ Logomakershop은 비디자이너도 쉽게 디자인 결과물을 만들 수 있
 
 ![편집 플로우 그래프 (데이터 노드가 추가 된 버전)](/assets/img/posts/2023-08-21-11-58-51.png)
 
-> 이렇게 데이터 Scope를 변경한다면 Taxonomy를 전송할 수 있지만, 용도가 매우 제한적인 데이터를 Global 레벨까지 끌어올려서 핸들링 하는 것 자체가 유지보수 측면에 있어 긍정적인 경험을 주지 못할 뿐더러 Data Scope를 수정하는 행위 자체가 긍정적인 DX를 제공하지 않는다는 문제점이 있습니다.
-{: .prompt-warning }
+이렇게 데이터 Scope를 변경한다면 Taxonomy를 전송할 수 있지만, 용도가 매우 제한적인 데이터를 Global 레벨까지 끌어올려서 핸들링 하는 것 자체가 유지보수 측면에 있어 긍정적인 경험을 주지 못할 뿐더러 Data Scope를 수정하는 행위 자체가 긍정적인 DX를 제공하지 않는다는 문제점이 있습니다.
 
 ## #2. 불필요한 데이터의 개입
 
@@ -155,8 +158,8 @@ export const TaxonomyValuesContextProvider = ({ children }: { children: ReactNod
       value={{
         selectedTemplateCategory,
         setSelectedTemplateCategory,
-				selectedTemplateId,
-				setSelectedTemplateId,
+        selectedTemplateId,
+        setSelectedTemplateId,
       }}
     >
       { children }
@@ -205,25 +208,25 @@ export const TaxonomyEventsContext = createContext<TaxonomyEventsContextArgument
 
 export const TaxonomyEventsContextProvider = ({ children }: { children: ReactNode }) => {
   const {
-		selectedTemplateCategory,
-		selectedTemplateId,
-	} = useContext(TaxonomyValuesContext);
+    selectedTemplateCategory,
+    selectedTemplateId,
+  } = useContext(TaxonomyValuesContext);
 
-	const setTaxonomyCreateSave = () => {
-		// 저장 시 Taxonomy 이벤트 전송
-		track({
-			event_type: 'create_save',
-			event_properties: {
-				selectedTemplateCategory,
-				selectedTemplateId,
-			},
-		});
-	}
+  const setTaxonomyCreateSave = () => {
+    // 저장 시 Taxonomy 이벤트 전송
+    track({
+      event_type: 'create_save',
+      event_properties: {
+        selectedTemplateCategory,
+        selectedTemplateId,
+      },
+    });
+  }
 
   return (
     <TaxonomyEventsContext.Provider
       value={{
-				setTaxonomyCreateSave,
+        setTaxonomyCreateSave,
       }}
     >
       { children }
@@ -236,23 +239,21 @@ export const TaxonomyEventsContextProvider = ({ children }: { children: ReactNod
 
 페이지 컴포넌트는 개발 도중 발생하는 여러 이슈로 인해 이미 Context Provider가 매우 복잡하게 선언 된 상황일 수 있습니다.
 
-{% raw %}
 ```tsx
 <TaxonomyValueContextProvider>
-	<TaxonomyEventContextProvider>
-	  <FirstProvider>
-			<SecondProvider>
-				<ThirdProvider>
-					{ children }
-				</ThirdProvider>
-			</SecondProvider>
-	  </FirstProvider>
-	</TaxonomyEventContextProvider>
+  <TaxonomyEventContextProvider>
+    <FirstProvider>
+      <SecondProvider>
+        <ThirdProvider>
+          { children }
+        </ThirdProvider>
+      </SecondProvider>
+    </FirstProvider>
+  </TaxonomyEventContextProvider>
 </TaxonomyValueContextProvider>
 
 // Terrible Context Hell
 ```
-{% endraw %}
 
 위에서 설명한 아키텍처를 채용했다면 페이지 컴포넌트에는 두 개의 Provider가 추가로 존재하게 됩니다.
 
@@ -260,7 +261,6 @@ Context Hell 현상은 그 자체만으로 코드의 가독성을 해치며 코�
 
 Taxonomy Value와 Taxonomy Event Context는 ‘이벤트 전송’이라는 하나의 역할에 충실한 Context이기 때문에 이 둘을 하나로 묶으면 Provider를 한 개로 줄일 수 있습니다.
 
-{% raw %}
 ```tsx
 // Taxonomy.tsx
 
@@ -279,25 +279,22 @@ export const TaxonomyContextProvider = ({ children }: { children: ReactNode }) =
   );
 };
 ```
-{% endraw %}
 
-{% raw %}
 ```tsx
 // page.tsx
 
 <TaxonomyContextProvider>
   <FirstProvider>
-		<SecondProvider>
-			<ThirdProvider>
-				{ children }
-			</ThirdProvider>
-		</SecondProvider>
+    <SecondProvider>
+      <ThirdProvider>
+        { children }
+      </ThirdProvider>
+    </SecondProvider>
   </FirstProvider>
 </TaxonomyContextProvider>
 
 // A little terrible Context Hell
 ```
-{% endraw %}
 
 # 마치며
 
