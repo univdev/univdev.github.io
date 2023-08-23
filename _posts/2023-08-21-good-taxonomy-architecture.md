@@ -3,7 +3,7 @@ title: "Taxonomy 대응을 위한 좋은 아키텍처"
 author:
   name: 박 찬영
   link: https://github.com/univdev
-date: 2023-08-21 11:54:00 +0900
+date: 2023-08-23 19:47:00 +0900
 categories: [Tech, Architecture]
 tags: [React, Architecture, Taxonomy]
 toc: true
