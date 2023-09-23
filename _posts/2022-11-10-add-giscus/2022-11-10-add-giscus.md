@@ -11,13 +11,13 @@ tags: ["Giscus"]
 기술 블로그를 Github Pages로 이전하면서 정적인 웹사이트로 바뀐 이후, 기술 블로그에 방문하는 분들의 리액션을 알 수 있는 창구가 필요해졌습니다.  
 그래서 지난번에 게시물 하단에 `applause-button`를 추가했었죠.
 
-![applause button](https://raw.githubusercontent.com/univdev/markdown-images/master/20221110150110.png)
+![applause button](images/20221110150110.png)
 _가장 큰 호응을 얻고 있는 Pinia 게시글_
 
 하지만 박수 횟수로는 방문자들의 니즈를 알 수가 없다는 문제가 있습니다.  
 이 문제를 해결할 수 있는 가장 좋은 방법은 '댓글'을 이용하는 것인데, 기술 블로그에 추가할 수 있는 확장 프로그램이 있다는 것은 알고 있었지만 여태까지 설치를 미루다가 이제야 추가하게 되었습니다.
 
-![댓글](https://raw.githubusercontent.com/univdev/markdown-images/master/20221110150454.png)
+![댓글](images/20221110150454.png)
 _드디어 추가한 댓글 확장 프로그램_
 
 # Extensions
@@ -41,25 +41,25 @@ Github의 Repository에 댓글을 저장하여 API로 불러와서 사용하는 
 
 # Discussions 활성화
 1. Repository의 설정 페이지로 들어갑니다.
-![설정 페이지](https://raw.githubusercontent.com/univdev/markdown-images/master/20221110152133.png)
+![설정 페이지](images/20221110152133.png)
 2. 'Features' 섹션에서 Discussions를 활성화합니다.
-![Discussions 활성화](https://raw.githubusercontent.com/univdev/markdown-images/master/20221110152213.png)
+![Discussions 활성화](images/20221110152213.png)
 
 # Giscus를 내 블로그에 추가
 1. [Giscus 설정 페이지][설정 페이지]로 들어갑니다.
-![Giscus 설정 페이지](https://raw.githubusercontent.com/univdev/markdown-images/master/20221110151220.png)
+![Giscus 설정 페이지](images/20221110151220.png)
 2. [설정] 섹션에서 댓글을 저장할 나의 레포지토리 이름을 입력합니다.
-![저장소 이름 입력](https://raw.githubusercontent.com/univdev/markdown-images/master/20221110151342.png)
+![저장소 이름 입력](images/20221110151342.png)
 3. 페이지와 Discussions를 연결할 방법을 선택합니다. (Github API에서 댓글을 조회할 수 있는 방법을 결정하는거예요.)
-![페이지와 Discussions를 연결할 방법 선택](https://raw.githubusercontent.com/univdev/markdown-images/master/20221110151428.png)
+![페이지와 Discussions를 연결할 방법 선택](images/20221110151428.png)
 4. Giscus를 이용하여 게시글에 댓글을 달면 Discussion을 생성하고 댓글이 달리는데, 해당 Discussion에 사용 될 카테고리를 선택합니다.
-![카테고리 선택](https://raw.githubusercontent.com/univdev/markdown-images/master/20221110151606.png)
+![카테고리 선택](images/20221110151606.png)
 5. 추가 기능을 선택합니다.
-![추가 기능 선택](https://raw.githubusercontent.com/univdev/markdown-images/master/20221110151642.png) 
+![추가 기능 선택](images/20221110151642.png) 
 6. 적용하실 테마를 선택해주세요.
-![테마 선택](https://raw.githubusercontent.com/univdev/markdown-images/master/20221110151708.png)
+![테마 선택](images/20221110151708.png)
 7. 생성 된 `script` 태그를 웹 페이지에 추가해주세요.
-![스크립트 태그 추가](https://raw.githubusercontent.com/univdev/markdown-images/master/20221110151815.png)
+![스크립트 태그 추가](images/20221110151815.png)
 8. 댓글창을 띄우고 싶은 위치에 `giscus` 클래스를 가진 Element를 배치해주세요. 스크립트가 활성화 되면서 댓글창으로 변환됩니다.
 
 # 마치며

@@ -8,7 +8,7 @@ categories: ["Tech", "Next.js"]
 tags: ["Next.js", "React", "Hydration"]
 ---
 # Hydration
-![Hydration](https://raw.githubusercontent.com/univdev/markdown-images/master/20221103113303.png)
+![Hydration](images/20221103113303.png)
 _Hydration을 검색하면 나오는 이미지_
 **Hydration**은 위 이미지처럼 **'수분 공급'**을 의미합니다.  
 Hydration을 이해하기 전에 CSR, SSR이 무엇인지 간단하게 짚고 넘어가야 합니다.

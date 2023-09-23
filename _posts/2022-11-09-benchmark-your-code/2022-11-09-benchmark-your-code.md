@@ -13,20 +13,20 @@ tags: ["Benchmark", "Javascript"]
 
 둘 중 어떤걸 써도 문제의 해결은 가능하지만 가급적 좋은 길을 선택하고자 할 때, 어떤 API가 보다 좋은 성능을 내는지를 측정하고 싶을 수 있습니다.
 # MeasureThat
-[![MeasureThat](https://raw.githubusercontent.com/univdev/markdown-images/master/20221109170554.png)][MeasureThat]
+[![MeasureThat](images/20221109170554.png)][MeasureThat]
 _소스코드 Benchmark 사이트_
 [MeasureThat][MeasureThat]에서 직접 소스코드를 작성하고 실행하여 두 코드 사이의 Performance를 측정할 수 있습니다.  
 ## 사용법
-![Create Benchmark](https://raw.githubusercontent.com/univdev/markdown-images/master/20221109170910.png)
+![Create Benchmark](images/20221109170910.png)
 
 시작 페이지에서 **[+ New benchmark]** 버튼을 클릭하시면 위 사진과 같은 페이지가 등장합니다.  
 이 페이지에서 코드를 작성하고 테스트 케이스를 추가하는 등의 작업을 진행하실 수 있습니다.
 
-![Code](https://raw.githubusercontent.com/univdev/markdown-images/master/20221109170821.png)
+![Code](images/20221109170821.png)
 
 위와 같이 코드를 입력하고 Benchmark를 실행하면
 
-![Chart](https://raw.githubusercontent.com/univdev/markdown-images/master/20221109170506.png)
+![Chart](images/20221109170506.png)
 _Benchmark_
 
 위 사진처럼 두 코드간 Performance를 비교할 수 있습니다.  

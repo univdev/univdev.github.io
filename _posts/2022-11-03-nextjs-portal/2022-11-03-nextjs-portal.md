@@ -11,9 +11,9 @@ tags: ["Next.js", "React", "Portal"]
 웹을 제작하다보면 대부분의 경우 계층 구조로 컴포넌트를 배치하여 렌더링하는 방식으로 문제를 해결할 수 있습니다.  
 그런데 간혹 n레벨에 배치 되어야 하는 컴포넌트가 실제로 렌더링 될 때는 Document의 최상단에 배치하고 싶을 수 있습니다.
 
-![Tooltip](https://raw.githubusercontent.com/univdev/markdown-images/master/20221103105627.png)
+![Tooltip](images/20221103105627.png)
 _Tooltip_
-![Modal](https://raw.githubusercontent.com/univdev/markdown-images/master/20221103105711.png)
+![Modal](images/20221103105711.png)
 _Modal_
 
 Tooltip이나 Modal 컴포넌트가 바로 그 대표적인 예시입니다.  

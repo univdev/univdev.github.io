@@ -7,12 +7,12 @@ date: 2022-10-26 00:54:00 +0900
 categories: [Tech, React Query]
 tags: [React, React Query]
 ---
-![React Query](https://raw.githubusercontent.com/univdev/markdown-images/master/20221026005504.png)
+![React Query](images/20221026005504.png)
 _React Query_
 
 [React Query][React Query]는 네트워크에서 받아온 데이터를 관리하기 위해 처리해야 하는 다양하고 번거로운 절차들을 대신 처리해주는 라이브러리입니다.  
 # React Query
-![npm - React Query](https://raw.githubusercontent.com/univdev/markdown-images/master/20221026010704.png){: width="400" }
+![npm - React Query](images/20221026010704.png){: width="400" }
 _npm 다운로드 횟수_
 주간 다운로드 횟수가 백만 회를 넘어갈 정도로 인기가 많은 라이브러리인데, 서버 데이터에 대해 어떤 문제점이 있길래 이렇게나 많은 호응을 얻을 수 있었을까요?
 # 사용해야 하는 이유
@@ -32,7 +32,7 @@ React Query는 이러한 상황에 대비해서 브라우저나 특정 Element�
 서버로부터 데이터를 불러오는 과정에서 로딩을 표시하거나, 에러가 발생한 경우 에러 메시지를 표시해야 하는 경우가 자주 있습니다.  
 원래라면 이 모든 것을 별도의 상태를 작성하고 `try catch` 등을 이용하여 수동적으로 갱신해야 했지만, 이를 대신 처리해줍니다.
 ## 무한 스크롤 구현
-![20221026012124](https://raw.githubusercontent.com/univdev/markdown-images/master/20221026012124.png)
+![20221026012124](images/20221026012124.png)
 _Infinite Scroll 출처: https://uxdesign.cc/the-infinite-scroll-effect-how-design-can-hack-your-brain-996a9b8129d9_
 
 아마 UX 개발자가 아니더라도 '무한 스크롤'에 대해서는 다들 아실거라고 생각합니다.  
@@ -175,7 +175,7 @@ function App() {
 ```
 
 그러면 다음과 같이 React Query로 호출한 모든 네트워크의 상태를 관찰할 수 있는 개발 도구가 표시됩니다. 🎉  
-![React Query Debugger](https://raw.githubusercontent.com/univdev/markdown-images/master/20221026150737.png)
+![React Query Debugger](images/20221026150737.png)
 _React Query Debugger_
 
 [React Query]: https://tanstack.com/query/v4
