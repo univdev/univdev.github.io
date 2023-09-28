@@ -1,0 +1,25 @@
+{
+	"pasteImage.basePath": "${projectRoot}",
+
+	"pasteImage.defaultName": "Y-MM-DD-HH-mm-ss",
+
+	"pasteImage.encodePath": "urlEncodeSpace",
+
+	"pasteImage.filePathConfirmInputBoxMode": "fullPath",
+
+	"pasteImage.forceUnixStyleSeparator": true,
+
+	"pasteImage.insertPattern": "${imageSyntaxPrefix}${imageFilePath}${imageSyntaxSuffix}",
+
+	"pasteImage.namePrefix": "",
+
+	"pasteImage.nameSuffix": "",
+
+	"pasteImage.path": "${projectRoot}/assets/post_images/${currentFileNameWithoutExt}",
+
+	"pasteImage.prefix": "/",
+
+	"pasteImage.showFilePathConfirmInputBox": false,
+
+	"pasteImage.suffix": ""
+}
