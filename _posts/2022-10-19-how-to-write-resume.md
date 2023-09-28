@@ -8,7 +8,7 @@ categories: [Life, Talk]
 tags: [자기소개서, 이직, 취업, 이력서]
 ---
 # 개요
-![취업](https://raw.githubusercontent.com/univdev/markdown-images/master/20221019015744.png)
+![취업](/assets/post_images/2022-10-19-how-to-write-resume/20221019015744.png)
 _출처: https://www.hankyung.com/life/article/202007146223g_
 
 저는 얼마 전, IT 업계에 정식으로 몸을 담은지 5년 차가 되었습니다.  
@@ -21,7 +21,7 @@ _출처: https://www.hankyung.com/life/article/202007146223g_
 
 # 좋은 이력서를 위한 조언
 ## 딱딱한 이력서 양식은 자제해주세요
-![딱딱한 이력서](https://raw.githubusercontent.com/univdev/markdown-images/master/20221019014802.png){: width="400"}
+![딱딱한 이력서](/assets/post_images/2022-10-19-how-to-write-resume/20221019014802.png){: width="400"}
 _00년대 대기업 이력서_
 
 가족관계, 자소서 등의 양식이 명확히 구분 된 표 형식의 구시대적 양식은 그다지 좋은 인상을 심어주지 못합니다.  

@@ -7,7 +7,7 @@ date: 2022-06-23 10:32:00 +0900
 categories: [Tech, Talk]
 ---
 # 개요
-![20220623103702](https://raw.githubusercontent.com/univdev/markdown-images/master/20220623103702.png)  
+![20220623103702](/assets/post_images/2022-06-23-skilled-industrial-personnel/20220623103702.png)  
 산업기능요원 편입이 되었던 작년 9월 6일, 이적 시장에 풀리는 기간인 6개월을 뛰어넘어 10개월간 복무하고 이직을 하게 되었습니다.
 # 이직 이유
 이직을 결심하게 된 계기는 여러가지가 있겠지만 가장 큰 이유는 커리어 측면에서의 이슈가 가장 컸던 것 같습니다.

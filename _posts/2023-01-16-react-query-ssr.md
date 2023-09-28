@@ -7,10 +7,10 @@ date: 2023-01-16 18:00:00 +0900
 categories: [Tech, React Query]
 tags: [React, Next.js, React Query]
 image:
-  path: https://raw.githubusercontent.com/univdev/markdown-images/master/20230116184315.png
+  path: /assets/post_images/2023-01-16-react-query-ssr/20230116184315.png
   alt: "SSR 환경에서의 React Query"
 ---
-![React Query](https://raw.githubusercontent.com/univdev/markdown-images/master/20230116184315.png)  
+![React Query](/assets/post_images/2023-01-16-react-query-ssr/20230116184315.png)  
 
 React Query는 서버와 클라이언트 사이에서 데이터를 관리하기 위한 좋은 라이브러리입니다.  
 자세한 설명은 [React Query][React Query] 문서를 확인 해주세요.

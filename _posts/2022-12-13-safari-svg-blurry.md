@@ -7,7 +7,7 @@ date: 2022-12-13 15:47:00 +0900
 categories: [Tech, Talk]
 tags: [SVG, Safari]
 ---
-![Safari SVG Blurry 해결 방법](https://raw.githubusercontent.com/univdev/markdown-images/master/20230111094752.png)
+![Safari SVG Blurry 해결 방법](/assets/post_images/2022-12-13-safari-svg-blurry/20230111094752.png)
 # 들어가며
 회사에서 서비스 되는 앱에서 사용할 WebView 페이지를 작업하던 중 발견한 이슈입니다.  
 iOS 앱에서 WebView 페이지를 접속하면 SVG로 추출한 이미지인데도 불구하고 화질 저하가 일어난다는 기묘한 이슈였습니다.

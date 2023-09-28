@@ -44,14 +44,14 @@ export const authSlice = createSlice({
 명령어를 지정하여 자주 사용 되는 코드 형식을 불러오는 도구를 User Snippet이라고 합니다.
 # 어떻게 쓸까요?
 Mac의 경우 `Shift` + `Command` + `p` 를 누르면 VSCode의 다양한 기능들을 설정할 수 있는 메뉴가 표시 됩니다.  
-![VSCode Context Menu](/assets/img/posts/2023-06-21-10-33-28.png)
+![VSCode Context Menu](/assets/post_images/2022-06-21-vscode-snippets-custom/2023-06-21-10-33-28.png)
 
 여기서 `User snippet` 키워드로 검색하면 하나의 메뉴가 나오게 됩니다.  
 이 메뉴를 클릭합니다.
-![User Snippet](/assets/img/posts/2023-06-21-10-34-48.png)
+![User Snippet](/assets/post_images/2022-06-21-vscode-snippets-custom/2023-06-21-10-34-48.png)
 
 Snippet을 적용할 확장자를 선택해줍니다.  
-![Snippet 확장자](/assets/img/posts/2023-06-21-10-35-43.png)
+![Snippet 확장자](/assets/post_images/2022-06-21-vscode-snippets-custom/2023-06-21-10-35-43.png)
 
 확장자를 선택하면 아래와 같이 JSON 파일이 열리게 됩니다.
 ```json
