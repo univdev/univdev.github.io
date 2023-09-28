@@ -7,10 +7,10 @@ categories: [Tech, Talk]
 tags: [Taxonomy, Amplitude, React]
 date: 2023-08-06 23:25:00 +0900
 image:
-  path: images/2023-08-22-15-48-49.png
+  path: assets/post_images/2023-08-06-amplitude-taxonomy-for-fe/2023-08-22-15-48-49.png
   alt: Amplitude Taxonomy 연동 가이드
 ---
-![Amplitude Taxonomy 연동 가이드](images/2023-08-22-15-48-49.png)
+![Amplitude Taxonomy 연동 가이드](assets/post_images/2023-08-06-amplitude-taxonomy-for-fe/2023-08-22-15-48-49.png)
 ## 들어가며
 안녕하세요 😀 박찬영입니다.  
 저는 회사에서 신규 서비스 런칭을 앞두고 있기 때문에 정말 많은 Task가 몰아치는 하루를 보내고 있어요 😭  
@@ -18,7 +18,7 @@ image:
 ## Amplitude란?
 Amplitude는 서비스의 사용성을 증대시키는데 도움을 줄 수 있는 다양한 정보를 수집하고 응용하기 위한 서비스입니다.
 
-![Amplitude에서 지원하는 서비스들](images/2023-08-06-23-35-42.png)
+![Amplitude에서 지원하는 서비스들](assets/post_images/2023-08-06-amplitude-taxonomy-for-fe/2023-08-06-23-35-42.png)
 ## Taxonomy
 Taxonomy란 유저들이 어떠한 ‘행위’를 했을 때 해당 행위에 대한 데이터들을 수집하여 유저가 ‘어떤 버튼을 많이 눌렀는가’, ‘이 행동을 한 유저는 어떠한 공통점을 보이는가’ 등  
 유저들의 상황을 이해하고 이를 기반으로 서비스의 사용성을 증대시키기 위한 행동 수집 방식입니다.  
@@ -41,9 +41,9 @@ yarn add @amplitude/analytics-browser
 
 1. [설정](https://analytics.amplitude.com/pixo/settings/projects) 페이지에 접근합니다.
 2. Projects 페이지에서 API Key를 발급 받을 프로젝트를 선택합니다.
-    ![프로젝트 페이지 접속](images/2023-08-06-23-37-15.png)
+    ![프로젝트 페이지 접속](assets/post_images/2023-08-06-amplitude-taxonomy-for-fe/2023-08-06-23-37-15.png)
 3. 이 곳에서 API Key를 발급 받을 수 있습니다.
-    ![API Key 발급](images/2023-08-06-23-37-43.png)
+    ![API Key 발급](assets/post_images/2023-08-06-amplitude-taxonomy-for-fe/2023-08-06-23-37-43.png)
 ### 프로젝트 적용
 일반적인 라이브러리의 초기화 방법과 동일하다고 보시면 됩니다.
 1. 어느 곳에 접속하더라도 프로젝트에 대한 초기화가 이루어질 수 있도록 프로젝트 진입부에 아래와 같은 코드를 추가 해야 합니다.
@@ -86,15 +86,15 @@ yarn add @amplitude/analytics-browser
 ## 계획 된 이벤트 설정 방법
 본격적으로 Taxonomy를 활용한 이벤트 수집을 시작하기 전에 이벤트를 설정하는 방법에 대해 알아보겠습니다.
 ### 이벤트 목록 확인하기
-![대시보드](images/2023-08-06-23-38-43.png)  
+![대시보드](assets/post_images/2023-08-06-amplitude-taxonomy-for-fe/2023-08-06-23-38-43.png)  
 [Amplitude Dashboard 페이지](https://app.amplitude.com/analytics/pixo/home)에서 **[Data]** 항목을 선택합니다.
 
-![이벤트 목록](images/2023-08-06-23-39-12.png)  
+![이벤트 목록](assets/post_images/2023-08-06-amplitude-taxonomy-for-fe/2023-08-06-23-39-12.png)  
 좌측 메뉴의 **[Event]** 탭을 클릭하면 프로젝트에 설정 된 이벤트를 볼 수 있습니다.
 ### Taxonomy Status
-![](images/2023-08-06-23-39-54.png)  
-![](images/2023-08-06-23-40-07.png)  
-![](images/2023-08-06-23-40-24.png)  
+![](assets/post_images/2023-08-06-amplitude-taxonomy-for-fe/2023-08-06-23-39-54.png)  
+![](assets/post_images/2023-08-06-amplitude-taxonomy-for-fe/2023-08-06-23-40-07.png)  
+![](assets/post_images/2023-08-06-amplitude-taxonomy-for-fe/2023-08-06-23-40-24.png)  
 
 Amplitude의 이벤트 Status에는 세 가지 [Status]가 존재합니다.
 
@@ -104,23 +104,23 @@ Amplitude의 이벤트 Status에는 세 가지 [Status]가 존재합니다.
 
 세 가지 상태에서 실제로 유의미하게 사용할 수 있는 데이터는 [Planned] 데이터이므로 사전에 필요할 것 같은 데이터를 정의하는 과정이 필요합니다.
 ### 이벤트 수집 계획 작성하기
-![이벤트 수집 계획](images/2023-08-06-23-40-44.png)  
+![이벤트 수집 계획](assets/post_images/2023-08-06-amplitude-taxonomy-for-fe/2023-08-06-23-40-44.png)  
 이벤트 페이지 우측 상단에 존재하는 **[Create event]** 버튼을 누르면 다음 프로세스를 통해 이벤트 계획을 수립할 수 있습니다
 
 1. 이벤트 이름을 작성합니다.
 2. 이벤트에 대한 세부 설정을 진행합니다.
     
-    ![이벤트 생성 이후 화면](images/2023-08-06-23-41-08.png)  
+    ![이벤트 생성 이후 화면](assets/post_images/2023-08-06-amplitude-taxonomy-for-fe/2023-08-06-23-41-08.png)  
     세부 설정으로는 이벤트 프로퍼티, 카테고리, 수집 상태 등을 설정할 수 있습니다.
 ### 이벤트 프로퍼티
 유저의 행동 패턴을 분석할 때 “어떤 유저가 버튼을 눌렀대요” 라는 막연한 사실만을 통보받는다면 해당 유저가 왜 하필 그 시간대에 버튼을 눌렀는지와 같은 세부적인 추론을 할 수 없습니다.  
 그러한 니즈를 해결하기 위해 이벤트를 실행하는 사람의 의도를 추론하기 위한 여러 단서를 붙여서 이벤트와 함께 전송할 수 있는데 이를 **이벤트 프로퍼티**라고 부릅니다.
 
-![이벤트 프로퍼티 설정 화면](images/2023-08-06-23-41-41.png)  
+![이벤트 프로퍼티 설정 화면](assets/post_images/2023-08-06-amplitude-taxonomy-for-fe/2023-08-06-23-41-41.png)  
 [Add Property] 버튼을 클릭하면 프로퍼티를 추가할 수 있습니다.  
 추가 된 프로퍼티를 클릭하여 세부 정보를 살펴보면 
 
-![이벤트 프로퍼티 타입 설정 화면](images/2023-08-06-23-42-17.png)  
+![이벤트 프로퍼티 타입 설정 화면](assets/post_images/2023-08-06-amplitude-taxonomy-for-fe/2023-08-06-23-42-17.png)  
 이처럼 해당 프로퍼티에 들어갈 값을 설정할 수 있습니다.
 
 이벤트 프로퍼티는 문자열, 숫자, Enum 등 다양한 자료형을 지원합니다.
@@ -151,7 +151,7 @@ track({
 ```
 
 만약 연결하는데 성공했을 경우 해당 이벤트를 발생시키면 브라우저 개발자도구 [Network] 탭에서 다음과 같은 요청을 볼 수 있습니다.  
-![Amplitude Network Request](images/2023-08-06-23-42-51.png)  
+![Amplitude Network Request](assets/post_images/2023-08-06-amplitude-taxonomy-for-fe/2023-08-06-23-42-51.png)  
 짧은 순간에 여러 차례의 이벤트 송신이 발생하면 일정시간 뒤에 발생했던 요청들을 한번에 묶어서 전송하는 모습을 보실 수 있습니다.
 
 이 로직은 `@amplitude/analytics-browser` 라이브러리가 내부적으로 처리하기 때문에 개발자 입장에서는 고려할 필요가 없다는 장점이 있습니다.
@@ -161,10 +161,10 @@ track({
 
 Amplitude는 `Unexpected` 상태의 이벤트를 `Planned`로 바꿀 수 있는 솔루션을 제공하고 있습니다.
 
-![Unexpected 이벤트 조회](images/2023-08-06-23-43-22.png)  
+![Unexpected 이벤트 조회](assets/post_images/2023-08-06-amplitude-taxonomy-for-fe/2023-08-06-23-43-22.png)  
 상단을 보시면 [Review Unexpected] 탭이 존재하는데, 이 탭에서 예측되지 못한 이벤트들을 모아서 볼 수 있습니다.
 
-![Unexpected 이벤트 상세 페이지](images/2023-08-06-23-44-05.png)  
+![Unexpected 이벤트 상세 페이지](assets/post_images/2023-08-06-amplitude-taxonomy-for-fe/2023-08-06-23-44-05.png)  
 예측되지 못한 이벤트 중 하나를 선택하면 [This event is not in your tracking plan.] 옆에 보이는 `Add` 버튼이 존재합니다.
 
 예측되지 못한 이벤트를 이런식으로 계획의 범주 안에 포함 시킬 수 있습니다.

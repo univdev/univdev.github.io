@@ -7,7 +7,7 @@ categories: [Tech, Talk]
 tags: [NovelAI, 일러스트]
 date: 2022-10-08 19:40:00 +0900
 ---
-[![Novel AI](images/20221008194553.png)][Novel AI]
+[![Novel AI](assets/post_images/2022-10-08-novel-ai-review/20221008194553.png)][Novel AI]
 # Novel AI
 [Novel AI][Novel AI]는 요즘 유행하는 텍스트 기반 이미지 생성 서비스입니다.  
 [Dall E][Dall E]와 다른 점은 실사처럼 그리는 것이 아닌, 만화나 애니메이션과 같은 화풍으로 **일러스트를 생성해 준다는 점입니다.**
@@ -25,17 +25,17 @@ Novel AI의 서비스는 텍스트 이야기 생성을 제외하면 모두 **유
 제가 이용한 플랜은 **1,000 Anlas**를 제공해주는데, 이미지 생성을 위해서는 **5 Anlas**가 필요합니다.  
 한 장에 **약 120원 정도가 소모된다고 보시면 돼요.**
 ## 생성한 이미지
-![란도셀 여자아이](images/20221008204746.png)  
+![란도셀 여자아이](assets/post_images/2022-10-08-novel-ai-review/20221008204746.png)  
 > "비 오는 여름날 일본의 버스 정류장 앞에서 빨간 란도셀을 등에 맨 어린 여자아이가 비를 맞고 있다."
 
-![불꽃놀이](images/20221008204843.png)  
+![불꽃놀이](assets/post_images/2022-10-08-novel-ai-review/20221008204843.png)  
 > "불꽃놀이를 구경하는 소녀의 눈동자에는 불꽃이 비춰지고 있다"
 
-![축제](images/20221008204919.png)
+![축제](assets/post_images/2022-10-08-novel-ai-review/20221008204919.png)
 > "인파가 가득한 일본 축제 현장에서 남자아이와 여자아이가 서로를 놓치지 않기 위해 손을 잡고 걷고 있다."
 
 ## 후기
-![Mindblow](images/giphy.gif)  
+![Mindblow](assets/post_images/2022-10-08-novel-ai-review/giphy.gif)  
 요즘 인공지능이 무섭게 발전한다고 듣긴 했는데 이정도인 줄은 몰랐습니다...  
 비록 다리가 4개로 그려진다거나, 란도셀의 끈이 팔을 관통하는 등의 문제가 조금 있긴 하지만 이정도면 거의 완벽하지 않나요?
 

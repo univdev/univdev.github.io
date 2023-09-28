@@ -9,7 +9,7 @@ tags: [Atomic Design]
 저는 몇 개월 전부터 `Atomic Design` 방법론에 빠져있어요.  
 애초부터 비즈니스 로직과 UI 컴포넌트 로직은 완벽히 분리되어야 한다는 철학이 있었던 저에게 있어 `Atomic Design`은 그 어떤 설계방법보다 아름답다고 느꼈거든요.
 # Atomic Design
-![아토믹 디자인](images/20220927235625.png)
+![아토믹 디자인](assets/post_images/2022-09-27-atomic-design-with-container-component/20220927235625.png)
 _아토믹 디자인하면 많이 보는 이미지_
 
 `Atomic Design`은 이미 유명한 방법론이고 컴포넌트 개발방식을 이용한 요즘 프론트엔드 프레임워크를 사용하는 프론트엔드 개발자라면 한 번 쯤은 들어보신적 있는 방법론일거예요.  
@@ -17,14 +17,14 @@ _아토믹 디자인하면 많이 보는 이미지_
 
 `Atomic Design`은 보편적으로 5단계의 세분화 과정을 거쳐요.
 
-![원자 레벨 컴포넌트](images/20220927235939.png)
+![원자 레벨 컴포넌트](assets/post_images/2022-09-27-atomic-design-with-container-component/20220927235939.png)
 _대표적인 원자 레벨 컴포넌트인 Input_
 ## Atom
 1. 현실에 존재하는 원자를 비유적으로 표현한 레벨이예요. 원자 레벨이라고 불러요
 2. 실제 원자처럼 더 이상 작게 쪼갤 수가 없는 컴포넌트로서, `Input`이나 `Text`와 같은 아주 간단한 기능만을 수행하는 컴포넌트가 원자 레벨 컴포넌트예요.
 3. 앞으로 소개할 4단계 중 **가장 재사용성이 높은 컴포넌트라고 볼 수 있어요.**
 
-![분자 레벨 컴포넌트](images/20220927235845.png)
+![분자 레벨 컴포넌트](assets/post_images/2022-09-27-atomic-design-with-container-component/20220927235845.png)
 _Input과 Label이 합쳐진 분자 컴포넌트 Field_
 ## Molecule
 1. 현실에 존재하는 분자를 비유적으로 표현한 레벨이예요. 분자 레벨이라고 불러요
@@ -32,7 +32,7 @@ _Input과 Label이 합쳐진 분자 컴포넌트 Field_
 3. `label`과 `input`이 공존하는 `field` 컴포넌트를 예로 들 수 있어요.
 4. 원자 레벨의 컴포넌트와 마찬가지로 프로젝트 전체에서 재사용 될 가능성이 높은 컴포넌트예요.
 
-![유기체 레벨 컴포넌트](images/20220928000000.png)
+![유기체 레벨 컴포넌트](assets/post_images/2022-09-27-atomic-design-with-container-component/20220928000000.png)
 _다양한 Field와 Button 등이 혼합 된 대표적인 유기체 Form_
 ## Organism
 1. 현실에 존재하는 유기체를 비유적으로 표현한 레벨이예요. 유기체 레벨이라고 불러요
@@ -63,7 +63,7 @@ _다양한 Field와 Button 등이 혼합 된 대표적인 유기체 Form_
 
 점점 무거워지는 `Props`를 보며 **"아 뭔가 망한 것 같은데"** 라는 생각이 들게 됩니다.
 
-![Prop Drilling](images/20220928000705.png)
+![Prop Drilling](assets/post_images/2022-09-27-atomic-design-with-container-component/20220928000705.png)
 _???: 나는 필요도 없는 데이터를 자꾸 넘겨주네_
 
 `Atom`이나 `Molecule` 단계의 컴포넌트는 아무리 하찮더라도 본연의 역할을 다하기 위해서라면 `Props`가 반드시 필요합니다.  
@@ -102,7 +102,7 @@ _???: 나는 필요도 없는 데이터를 자꾸 넘겨주네_
 
 `Container` 계층에서는 `Atom` `Molecule` `Organism` 그 어떤 컴포넌트도 들어올 수 있지만, 가급적 역할은 하나로 세분화 해야 합니다.
 
-![이미지](images/20220928002948.png)
+![이미지](assets/post_images/2022-09-27-atomic-design-with-container-component/20220928002948.png)
 _많은 앱에서 사용되는 AppBar_
 
 위 헤더의 역할은 다음과 같아요.

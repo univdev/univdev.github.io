@@ -11,7 +11,7 @@ tags: [React, Context]
 `Context`는 React에서 제공하는 기능 중 하나로, 유효범위 내부에 존재하는 컴포넌트들에서 데이터를 주고받는 방법 중 하나입니다.  
 # 사용 이유
 기본적으로 React 공식 홈페이지에서는 컴포넌트들의 계층이 복잡해질 때 `props`가 아닌 다른 방식으로 데이터를 쉽게 주고 받을 수 있다고 홍보(?)하고 있습니다.
-![Prop Drilling](images/20220930233402.png)
+![Prop Drilling](assets/post_images/2022-09-30-react-context-introduction/20220930233402.png)
 _하위 컴포넌트에게 넘겨주기 위해 거쳐가야하는 관문이 많다_
 
 위 사진은 저번 [Atomic Design][Atomic Design] 문서에서 언급했던 `Prop Drilling` 현상을 설명하는 사진입니다.
