@@ -32,12 +32,47 @@ Sentry는 오늘날 가장 많이 사용하는 오류 수집 도구 중 하나�
 
 ![Sentry 지원 플랫폼](/assets/post_images/2024-05-31-install-sentry-on-nextjs/2024-05-31-11-47-15.png){: width="600" }
 
+## Sentry 프로젝트 개설하기
 이 문서에서는 *Next.js* 환경에서 Sentry를 적용하는 방법에 대해 설명합니다.
 
+![프로젝트 페이지](/assets/post_images/2024-05-31-sentry-nextjs-issue/2024-06-03-11-00-50.png)
+[sentry.io](https://sentry.io/) 페이지에서 오류를 수집할 프로젝트를 추가할 수 있습니다.  
+
+![프로젝트 추가 페이지](/assets/post_images/2024-05-31-sentry-nextjs-issue/2024-06-03-11-02-40.png)
+프로젝트 페이지에서 [Create Project] 버튼을 클릭하면 위 사진과 같은 페이지를 보실 수 있습니다.  
+이 페이지에서 오류를 수집할 프로젝트의 유형, 오류 수집 빈도, 프로젝트 이름을 입력하기만 하면 간단하게 프로젝트 개설이 완료 됩니다.
+
+## Sentry와 내 프로젝트 연동하기
 우선 터미널을 이용하여 Sentry를 적용하고자 하는 Next.js 프로젝트의 최상단에 접근합니다.  
 그리고 다음과 같은 명령어를 입력합니다.
 
 ```shell
 npx @sentry/wizard@latest -i nextjs
 ```
-이 명령어는 Next.js 프로젝트에서 Sentry의 설치 및 초기 설정을 자동으로 진행 해줍니다.
+이 명령어는 Next.js 프로젝트에서 Sentry의 설치 및 초기 설정을 자동으로 진행 해줍니다.  
+명령어 입력 후 프로젝트 설정을 위해 몇가지 설정이 필요합니다.
+
+```
+◇  Next.js does not seem to be installed. Do you still want to continue?
+│  Yes
+│
+◇  Are you using Sentry SaaS or self-hosted Sentry?
+│  Sentry SaaS (sentry.io)
+│
+◇  Do you already have a Sentry account?
+│  Yes (이 과정에서 [sentry.io](https://sentry.io/)에 로그인이 필요합니다.)
+│
+●  If the browser window didn't open automatically, please open the following link to log into Sentry:
+│  
+│  https://sentry.io/account/settings/wizard/.../
+│
+◇  Login complete.
+│
+◆  Select your Sentry project.
+│  ● organization-exxxa1xx1/sentry-project-name
+│  ○ organization-ex1xa1xx1/sentry-project-name2
+└
+```
+
+명령어를 입력하면 `sentry.(client|edge|server).config` 파일과 함께 Sentry에 에러를 기록하기 위한 여러 예시코드를 추가해줍니다.  
+예시코드는 프로덕션에서 사용 되지 않을 코드이기에 삭제 해주셔도 무방합니다.
