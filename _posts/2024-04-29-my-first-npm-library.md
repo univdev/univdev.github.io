@@ -1,5 +1,5 @@
 ---
-title: "나의 첫 npm 패키지, ww-timer 회고"
+title: "우아한 나의 패키지, ww-timer 회고"
 date: 2024-04-29 00:03:00 +0900
 author:
   name: "박 찬영"
@@ -7,12 +7,12 @@ author:
 categories: [Tech, Talk]
 tags: [npm, package, ww-timer]
 image:
-  path: /assets/post_images/2024-04-29-my-first-npm-library/2024-04-29-00-13-45.png
-  alt: "나의 첫 패키지, ww-timer 회고"
+  path: /assets/post_images/2024-04-29-my-first-npm-library/2024-07-31-19-11-44.png
+  alt: "우아한 패키지, ww-timer 배포 회고"
 ---
-![나의 첫 패키지, ww-timer 회고](/assets/post_images/2024-04-29-my-first-npm-library/2024-04-29-00-13-45.png)
+![우아한 패키지, ww-timer 회고](/assets/post_images/2024-04-29-my-first-npm-library/2024-07-31-19-11-44.png)
 
-# 나의 첫 패키지
+# npm에 ww-timer를 배포하다
 저는 한 달 쯤 전에 npm에 [ww-timer라는 라이브러리](https://www.npmjs.com/package/ww-timer)를 배포했습니다.<br>
 현재 개발하고 있는 서비스는 글로벌 시장을 목표로 하고 있는 생산성 앱인데, 이 앱의 기능 중 하나로 타이머가 들어갈 예정입니다.<br>
 웹에서 Timer를 개발하려면 필히 `setTimeout`이나 `setInterval`을 사용해야 하는데 이러한 비동기 함수는 브라우저의 작업량에 따라 실행 순위가 후순위로 밀리고 밀려 결국에는 실제 시간과 엄청난 차이가 벌어지게 되는 문제가 발생했습니다.<br>
