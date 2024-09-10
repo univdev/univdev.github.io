@@ -3,7 +3,7 @@ title: "서버와 클라이언트의 우아한(?) 대화 방법, Adapter Pattern
 author:
   name: "박 찬영"
   link: "https://github.com/univdev"
-date: 2024-09-10 18:31:00 +0900
+date: 2024-09-10 21:30:00 +0900
 categories: [Tech, Talk]
 tags: [Adapter Pattern, FSD, Design Pattern, 디자인 패턴]
 image:
