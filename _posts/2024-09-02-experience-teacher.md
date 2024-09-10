@@ -7,7 +7,7 @@ categories: [Life, Talk]
 tags: [교육, Education, 프로그래밍]
 date: 2024-09-03 10:31:00 +0900
 image:
-  title: "/assets/post_images/2024-09-02-experience-teacher/2024-09-03-10-12-40.png"
+  path: "/assets/post_images/2024-09-02-experience-teacher/2024-09-03-10-12-40.png"
   alt: 멘토 활동 중간 회고
 ---
 ![멘토 활동 중간 회고](/assets/post_images/2024-09-02-experience-teacher/2024-09-03-10-12-40.png)
