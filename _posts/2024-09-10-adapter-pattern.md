@@ -57,7 +57,7 @@ Server에서는 다음과 같은 Interface로 이루어진 데이터를 제공�
 
 도대체 이건 무슨 규칙인가 싶어 개발자에게 문의 해보니
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/13c0a6f6-1cfb-4505-a5fb-e2291cc0c308/f3633510-8edc-48e5-9041-c6e8d676cd2e/image.png)
+![백엔드 개발자와의 대화](/assets/post_images/2024-09-10-adapter-pattern/2024-09-10-18-58-34.png)
 
 > “왜 그런지 아무도 몰라. iOS에서는 저런식으로 요일 Format을 넣더라고. Web API를 만들 때 이것도 고쳐줄까?”
 
