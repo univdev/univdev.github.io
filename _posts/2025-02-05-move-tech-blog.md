@@ -1,5 +1,8 @@
 ---
 title: "기술블로그 두번째 이전 소식"
+author:
+  name: 박 찬영
+  link: https://github.com/univdev
 date: 2025-02-05 01:37:00 +0900
 categories: [Life, Talk]
 ---
